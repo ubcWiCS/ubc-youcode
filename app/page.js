@@ -7,7 +7,7 @@ import Timer from '@/sections/Timer';
 import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
 import ResourcesAndFaq from '@/sections/ResourcesAndFaq';
 import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
-import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
+
 
 
 export default function Home() {

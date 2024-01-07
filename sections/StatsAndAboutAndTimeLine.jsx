@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
 import Stats from '@/components/Stats';
 import About from '@/components/About';
-import { Timeline } from 'sanity';
+import TimeLine from '@/components/TimeLine';
 
 
 const InfoContainer = styled.div`
@@ -41,7 +41,7 @@ const StatsAndAboutAndTimeLine = () => {
       <BgScroll />
       <Stats/>
       <About/>
-      <Timeline/>
+      <TimeLine/>
     </InfoContainer>
   )
 }
