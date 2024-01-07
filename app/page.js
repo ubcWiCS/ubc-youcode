@@ -1,10 +1,25 @@
-import Image from 'next/image'
+"use client"
+import Navbar from '@/components/Navbar';
+import Image from 'next/image';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import Hero from '@/sections/Hero';
+import Timer from '@/sections/Timer';
+import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
+import ResourcesAndFaq from '@/sections/ResourcesAndFaq';
+import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
+
 
 
 export default function Home() {
   return (
-   <main className='ml-20 bg-white-200 mt-100 h-full'>
-      Hello YouCode!
-    </main>
+    <ParallaxProvider>
+    
+        <Hero/>
+        <Timer/>
+        <StatsAndAboutAndTimeLine/>
+        <ResourcesAndFaq/>
+        <SponsorsAndTeam/>
+     
+    </ParallaxProvider>
   )
 }
