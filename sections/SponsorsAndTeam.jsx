@@ -2,6 +2,9 @@ import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
+import Sponsors from '@/components/Sponsors';
+import Footer from '@/components/Footer';
+import TeamCarousel from '@/components/TeamCarousel';
 
 
 const InfoContainer = styled.div`
@@ -36,6 +39,9 @@ const SponsorsAndTeam = () => {
   return (
     <InfoContainer>
       <BgScroll />
+      <Sponsors/>
+      <TeamCarousel/>
+      <Footer/>
     </InfoContainer>
   )
 }

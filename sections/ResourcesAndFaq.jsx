@@ -1,8 +1,9 @@
+import Resources from '@/components/Resources';
 import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
-
+import Faq from '@/components/faq';
 
 const InfoContainer = styled.div`
   background: #150C27;
@@ -32,12 +33,14 @@ const BgScroll = styled(SectionContainer)`
 `
 
 
-const TimeLineAndResources = () => {
+const ResourcesAndFaq = () => {
   return (
     <InfoContainer>
       <BgScroll />
+      <Resources/>
+      <Faq/>
     </InfoContainer>
   )
 }
 
-export default TimeLineAndResources;
+export default ResourcesAndFaq;

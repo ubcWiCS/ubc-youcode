@@ -2,6 +2,7 @@ import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
+import Register from '@/components/Register';
 
 
 const BgSectionContainer = styled(SectionContainer)`
@@ -39,6 +40,7 @@ const Hero = () => {
   return (
     <BgSectionContainer>
       <BgScroll />
+      <Register/>
     </BgSectionContainer>
   )
 }

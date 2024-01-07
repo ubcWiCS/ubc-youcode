@@ -2,6 +2,9 @@ import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
+import Stats from '@/components/Stats';
+import About from '@/components/About';
+import { Timeline } from 'sanity';
 
 
 const InfoContainer = styled.div`
@@ -32,12 +35,15 @@ const BgScroll = styled(SectionContainer)`
 `
 
 
-const StatsAndAbout = () => {
+const StatsAndAboutAndTimeLine = () => {
   return (
     <InfoContainer>
       <BgScroll />
+      <Stats/>
+      <About/>
+      <Timeline/>
     </InfoContainer>
   )
 }
 
-export default StatsAndAbout
+export default StatsAndAboutAndTimeLine

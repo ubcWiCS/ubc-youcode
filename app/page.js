@@ -4,23 +4,21 @@ import Image from 'next/image';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Hero from '@/sections/Hero';
 import Timer from '@/sections/Timer';
-import StatsAndAbout from '@/sections/StatsAndAbout';
-import TimeLineAndResources from '@/sections/TimeLineAndResources';
+import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
+import ResourcesAndFaq from '@/sections/ResourcesAndFaq';
 import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
+import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
 
 
 export default function Home() {
   return (
     <ParallaxProvider>
-     
-       
+    
         <Hero/>
         <Timer/>
-        <StatsAndAbout/>
-        <TimeLineAndResources/>
+        <StatsAndAboutAndTimeLine/>
+        <ResourcesAndFaq/>
         <SponsorsAndTeam/>
-        
-        
      
     </ParallaxProvider>
   )
