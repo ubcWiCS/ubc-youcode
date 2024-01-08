@@ -29,6 +29,8 @@ const BgScroll = styled(SectionContainer)`
   width: 100%;
   height: 100%;
 
+  z-index: 0;
+
 
 `
 
@@ -36,9 +38,10 @@ const BgScroll = styled(SectionContainer)`
 const ResourcesAndFaq = () => {
   return (
     <InfoContainer>
-      <BgScroll />
-      <Resources/>
-      <Faq/>
+      <BgScroll>
+        <Resources/>
+        <Faq/>
+      </BgScroll>
     </InfoContainer>
   )
 }
