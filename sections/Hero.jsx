@@ -2,7 +2,10 @@ import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
+import Image from 'next/image';
+import Link from 'next/link';
 import Register from '@/components/Register';
+
 
 
 const BgSectionContainer = styled(SectionContainer)`
@@ -32,15 +35,29 @@ const BgScroll = styled(SectionContainer)`
   top: 0;
   z-index: 1;
   
-  
-  }
+
 `
+
+
+const BodyContainer = styled.div`
+  
+  margin-top: 13rem;
+  position:relative;
+  
+ 
+`
+
 
 const Hero = () => {
   return (
     <BgSectionContainer>
       <BgScroll />
-      <Register/>
+      <BodyContainer className='flex flex-col items-center justify-center z-10'>
+        <Register/>
+      
+        
+      </BodyContainer>
+     
     </BgSectionContainer>
   )
 }

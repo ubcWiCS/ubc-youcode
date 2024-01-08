@@ -13,7 +13,7 @@ import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
 export default function Home() {
   return (
     <ParallaxProvider>
-    
+        <Navbar/>
         <Hero/>
         <Timer/>
         <StatsAndAboutAndTimeLine/>
@@ -23,3 +23,5 @@ export default function Home() {
     </ParallaxProvider>
   )
 }
+
+

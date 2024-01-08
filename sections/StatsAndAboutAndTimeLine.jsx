@@ -5,6 +5,7 @@ import { SectionContainer } from '../components/SectionContainer';
 import Stats from '@/components/Stats';
 import About from '@/components/About';
 import TimeLine from '@/components/TimeLine';
+import Stats2 from '@/components/Stats2';
 
 
 const InfoContainer = styled.div`
@@ -33,15 +34,29 @@ const BgScroll = styled(SectionContainer)`
 
 
 `
-
+const BodyContainer = styled.div`
+  
+  margin-top: 13rem;
+  position:relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+ 
+`
 
 const StatsAndAboutAndTimeLine = () => {
   return (
     <InfoContainer>
       <BgScroll />
-      <Stats/>
+      <BodyContainer className='flex w-full flex-col z-10'>
       <About/>
       <TimeLine/>
+      <Stats2/>
+      
+        
+      </BodyContainer>
+      
+      
     </InfoContainer>
   )
 }
