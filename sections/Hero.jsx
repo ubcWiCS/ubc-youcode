@@ -5,6 +5,7 @@ import { SectionContainer } from '../components/SectionContainer';
 import Image from 'next/image';
 import Link from 'next/link';
 import Register from '@/components/Register';
+import TimeLine from '@/components/TimeLine';
 
 
 
@@ -54,6 +55,7 @@ const Hero = () => {
       <BgScroll />
       <BodyContainer className='flex flex-col items-center justify-center z-10'>
         <Register/>
+        <TimeLine/>
       
         
       </BodyContainer>

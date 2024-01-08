@@ -49,11 +49,10 @@ const StatsAndAboutAndTimeLine = () => {
     <InfoContainer>
       <BgScroll />
       <BodyContainer className='flex w-full flex-col z-10'>
+     
       <About/>
-      <TimeLine/>
       <Stats2/>
       
-        
       </BodyContainer>
       
       
