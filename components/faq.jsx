@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-// Define your FAQ data
+// FAQ items
 const faqs = [
   { question: "Do I need any coding experience?", answer: "Answer here" },
   { question: "Question 2", answer: "Answer 2" },
@@ -15,15 +15,21 @@ const FaqItem = ({ question, answer }) => {
 
   return (
     <div className="mb-4">
+
+
       <button
         onClick={() => setIsOpen(!isOpen)}
         className="flex justify-between items-center w-full px-4 py-2 text-left text-black bg-teal-300 rounded-lg hover:bg-teal-400 focus:outline-none focus:ring-2 focus:ring-teal-600"
       >
+
+
         {question}
-        <span>{isOpen ? '▼' : '▶'}</span>
+        <span>{isOpen ? '▼' : '▶'}</span> // icons
+
+
       </button>
       {isOpen && (
-        <div className="mt-2 p-4 bg-teal-500 rounded-lg text-white">
+        <div className="mt-2 p-4 bg-teal-500 rounded-lg text-white"> // will figure out how to fill box with teal
           {answer}
         </div>
       )}
@@ -31,7 +37,7 @@ const FaqItem = ({ question, answer }) => {
   );
 };
 
-// Define the main FAQ section component
+// defining faq section
 const FaqSection = () => {
   return (
     <div className="bg-teal-200 p-8 rounded-xl shadow-md">
