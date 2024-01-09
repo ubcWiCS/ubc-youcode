@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import Link from "next/link";
 import Image from 'next/image';
 
 const FooterContainer = styled.div`
@@ -37,7 +38,7 @@ const FooterSocialContainer = styled.div`
   align-items: center;
   gap: 20px;
   position: absolute;
-  right: ${(props) => props.rightOffset || '0px'};
+  right: ${(props) => props.$rightOffset || '0px'};
   bottom: 150px
 `;
 
@@ -54,38 +55,38 @@ const Flag = styled.div`
 
 const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, flagLink, flagImage, rightOffset }) => {
   return (
-    <FooterSocialContainer rightOffset={rightOffset}>
+    <FooterSocialContainer $rightOffset={rightOffset}>
       <SocialGroup>
         {facebookLink && (
-          <a href={facebookLink}>
+          <Link href={facebookLink}>
             <Image src="/assets/facebook.png" alt="Facebook" width={70} height={70} />
-          </a>
+          </Link>
         )}
 
         {flagLink && flagImage && (
-        <a href={flagLink}>
+        <Link href={flagLink}>
           <Flag>
             <Image src={flagImage} alt="Flag" width={60} height={180} />
           </Flag>
-        </a>
+        </Link>
       )}
 
         {emailLink && (
-          <a href={emailLink}>
+          <Link href={emailLink}>
             <Image src="/assets/email.png" alt="Email" width={70} height={70} />
-          </a>
+          </Link>
         )}
       </SocialGroup>
       <SocialGroup>
         {instagramLink && (
-          <a href={instagramLink}>
+          <Link href={instagramLink}>
             <Image src="/assets/insta.png" alt="Instagram" width={70} height={70} />
-          </a>
+          </Link>
         )}
         {linkedinLink && (
-          <a href={linkedinLink}>
+          <Link href={linkedinLink}>
             <Image src="/assets/linkedin.png" alt="LinkedIn" width={70} height={70} />
-          </a>
+          </Link>
         )}
       </SocialGroup>
     </FooterSocialContainer>
