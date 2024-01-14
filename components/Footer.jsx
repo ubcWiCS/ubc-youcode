@@ -16,7 +16,7 @@ const Footer = () => {
       linkedinLink="https://www.linkedin.com/yourpage"
       flagLink="https://ubcwics.com/"
       flagImage="/assets/WicsFlag.png"
-      rightOffset="350px"
+      rightOffset="370px"
       />
       <FooterSocial
       facebookLink="https://www.facebook.com/yourpage"
@@ -44,7 +44,7 @@ const FooterSocialContainer = styled.div`
 
 const SocialGroup = styled.div`
   display: flex;
-  gap: 20px;
+  align-items: flex-end;
 `;
 
 const Flag = styled.div`
@@ -53,10 +53,19 @@ const Flag = styled.div`
 `;
 
 
+const TopSocialGroup = styled(SocialGroup)`
+  gap: 20px;
+`;
+
+const BottomSocialGroup = styled(SocialGroup)`
+  gap: 90px;
+`;
+
+
 const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, flagLink, flagImage, rightOffset }) => {
   return (
     <FooterSocialContainer $rightOffset={rightOffset}>
-      <SocialGroup>
+      <TopSocialGroup>
         {facebookLink && (
           <Link href={facebookLink}>
             <Image src="/assets/facebook.png" alt="Facebook" width={70} height={70} />
@@ -76,8 +85,8 @@ const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, fl
             <Image src="/assets/email.png" alt="Email" width={70} height={70} />
           </Link>
         )}
-      </SocialGroup>
-      <SocialGroup>
+      </TopSocialGroup>
+      <BottomSocialGroup>
         {instagramLink && (
           <Link href={instagramLink}>
             <Image src="/assets/insta.png" alt="Instagram" width={70} height={70} />
@@ -88,7 +97,7 @@ const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, fl
             <Image src="/assets/linkedin.png" alt="LinkedIn" width={70} height={70} />
           </Link>
         )}
-      </SocialGroup>
+      </BottomSocialGroup>
     </FooterSocialContainer>
   );
 }
