@@ -40,7 +40,7 @@ const FaqItem = ({ question, answer }) => {
 // defining faq section
 const FaqSection = () => {
   return (
-    <div className="bg-teal-200 p-8 rounded-xl shadow-md">
+    <div className="bg-teal-200 p-8 rounded-xl shadow-md" id="faq">
       <h2 className="text-xl font-semibold mb-4 text-center">FAQ</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-8">
         {faqs.map((faq, index) => (
