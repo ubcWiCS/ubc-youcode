@@ -55,7 +55,7 @@ const Flag = styled.div`
 
 const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, flagLink, flagImage, rightOffset }) => {
   return (
-    <FooterSocialContainer $rightOffset={rightOffset}>
+    <FooterSocialContainer id="contact" $rightOffset={rightOffset} >
       <SocialGroup>
         {facebookLink && (
           <Link href={facebookLink}>

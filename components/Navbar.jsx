@@ -70,21 +70,24 @@ const Navbar = () => {
               <Link onClick={closeMenu} href="/">About</Link>
             </li>
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/research">Schedule</Link>
+              <Link onClick={closeMenu} href="/#schedule">Schedule</Link>
             </li>
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/publications">Resources</Link>
+              <Link onClick={closeMenu} href="/#resources">Resources</Link>
             </li>
            
            
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/news">FAQ</Link>
+              <Link onClick={closeMenu} href="/#faq">FAQ</Link>
             </li>
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/products">Sponsors</Link>
+              <Link onClick={closeMenu} href="/#sponsors">Sponsors</Link>
             </li>
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/jobs">girlCode</Link>
+              <Link onClick={closeMenu} href="/#contact">Contact</Link>
+            </li>
+            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+              <Link onClick={closeMenu} href="https://www.ubcgirlcode.com/">girlCode</Link>
             </li>
            
           </ul>

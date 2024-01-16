@@ -14,7 +14,7 @@ const Resources = () => {
     )
   }
   return (
-    <div className='resources ml-14 mr-14'>
+    <div className='resources ml-14 mr-14' id="resources">
 
       <div className='title w-[347px] h-36 relative'>
         <div className="text-white drop-shadow-lg font-inter text-base">Public playlist</div>
