@@ -2,6 +2,8 @@ import React, { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 // eslint-disable-next-line import/no-named-default
 import anime from 'animejs'
+import Image from 'next/image';
+import Link from 'next/link';
 
 
 const profiles = [
@@ -11,6 +13,39 @@ const profiles = [
     emoji: 'WICS',
     color: '#01DACC',
     title: 'VP External Wics',
+    social: ""
+  },
+  {
+    img: '/assets/team/Carina-Tze.jpg',
+    name: 'Carina Tze',
+    emoji: 'WICS',
+    color: '#01DACC',
+    title: 'President',
+    social: ""
+  },
+  {
+    img: '/assets/team/Selin-Uz.jpeg',
+    name: 'Selin Uz',
+    emoji: 'WICS',
+    color: '#01DACC',
+    title: '',
+    social: ""
+  },
+
+  {
+    img: '/assets/team/Trisha-Sia.jpeg',
+    name: 'Trisha Sia',
+    emoji: 'WICS',
+    color: '#01DACC',
+    title: '',
+    social: ""
+  },
+  {
+    img: '/assets/team/Yeojun-Han.jpg',
+    name: 'Yeojun Han',
+    emoji: 'WICS',
+    color: '#01DACC',
+    title: '',
     social: ""
   },
   
@@ -45,21 +80,7 @@ const ProfileList = styled.div`
   white-space: nowrap;
 `
 
-const ProfileImage = styled.img`
-  &:hover {
-    transform: scale(1.15);
-    opacity: 1;
-  }
-  width: 100px;
-  height: 100px;
-  border-radius: 10px;
-  background-color: ${(p) => p.color};
-  object-fit: cover;
-  margin: 10px 15px;
-  transition: all 100ms ease-in-out;
-  opacity: 0.69;
-  
-`
+
 
 let lastTime = -1
 let accumulateTime = -1
@@ -133,20 +154,20 @@ export default function Team() {
           setAccel(1)
         }}
       >
-        {
-         
-        }
-        <div style={{ willChange: 'transform' }} id='anim-profiles'>
+        
+        <div style={{ willChange: 'transform' }} className="flex flex-row" id='anim-profiles'>
           {profiles.map((profile) => (
-            <a href={profile.social} key={profile.img}>
-              <ProfileImage
+            <Link href={profile.social} key={profile.img}>
+              <Image
+                className='rounded-lg  mx-5 transform transition-transform hover:scale-115'
+                width={100}
+                height={100}
                 src={profile.img}
-                color={profile.color}
                 onClick={() => setSelectedProfile(profile)}
                 onMouseEnter={() => setSelectedProfile(profile)}
                 onMouseLeave={() => setSelectedProfile({})}
               />
-            </a>
+            </Link>
           ))}
           
         </div>
