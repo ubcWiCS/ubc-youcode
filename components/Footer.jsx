@@ -3,104 +3,76 @@ import styled from 'styled-components';
 import Link from "next/link";
 import Image from 'next/image';
 
-const FooterContainer = styled.div`
+const StyledFooter = styled.footer`
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Footer = () => {
   return (
-    <FooterContainer>
+    <StyledFooter>
       <FooterSocial
+      direction="row"
       facebookLink="https://www.facebook.com/yourpage"
       emailLink="https://www.email.com/yourpage"
       instagramLink="https://www.instagram.com/yourpage"
       linkedinLink="https://www.linkedin.com/yourpage"
-      flagLink="https://ubcwics.com/"
-      flagImage="/assets/WicsFlag.png"
-      rightOffset="370px"
+      Logolink="https://ubcwics.com/"
+      LogoImage="/assets/WicsLogo.png"
       />
+      <Image className= "mx-12" src="/assets/DivingUnicon.png" alt="YoucodeLogo" width={100} height={100} />
       <FooterSocial
+      direction="row-reverse"
       facebookLink="https://www.facebook.com/yourpage"
       emailLink="https://www.email.com/yourpage"
       instagramLink="https://www.instagram.com/yourpage"
       linkedinLink="https://www.linkedin.com/yourpage"
-      flagLink="https://ubcwics.com/"
-      flagImage="/assets/WidsFlag.png"
-      rightOffset="50px"
+      Logolink="https://ubcwics.com/"
+      LogoImage="/assets/WidsLogo.png"
       />
-    </FooterContainer>
-    
+    </StyledFooter>
   )
 }
 
 const FooterSocialContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  display: flex; 
   align-items: center;
-  gap: 20px;
-  position: absolute;
-  right: ${(props) => props.$rightOffset || '0px'};
-  bottom: 150px
+  justify-content: flex-start;
+  flex-direction: ${(props) => props.direction || 'row'};
+  gap: 2rem;
 `;
 
-const SocialGroup = styled.div`
-  display: flex;
-  align-items: flex-end;
-`;
-
-const Flag = styled.div`
-  width: 70px;
-  height: 110px; 
-`;
-
-
-const TopSocialGroup = styled(SocialGroup)`
-  gap: 20px;
-`;
-
-const BottomSocialGroup = styled(SocialGroup)`
-  gap: 90px;
-`;
-
-
-const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, flagLink, flagImage, rightOffset }) => {
+const FooterSocial = ({ direction, facebookLink, emailLink, instagramLink, linkedinLink, Logolink, LogoImage }) => {
   return (
-    <FooterSocialContainer id="contact" $rightOffset={rightOffset} >
-      <SocialGroup>
+    <FooterSocialContainer direction={direction} >
+        {Logolink && LogoImage && (
+        <Link href={Logolink}>
+            <Image src={LogoImage} alt="Flag" width={100} height={100} />
+        </Link>
+        )}
         {facebookLink && (
           <Link href={facebookLink}>
-            <Image src="/assets/facebook.png" alt="Facebook" width={70} height={70} />
+            <Image src="/assets/Facebook.png" alt="Facebook" width={100} height={100} />
           </Link>
         )}
-
-        {flagLink && flagImage && (
-        <Link href={flagLink}>
-          <Flag>
-            <Image src={flagImage} alt="Flag" width={60} height={180} />
-          </Flag>
-        </Link>
-      )}
-
         {emailLink && (
           <Link href={emailLink}>
-            <Image src="/assets/email.png" alt="Email" width={70} height={70} />
+            <Image src="/assets/Mail.png" alt="Mail" width={100} height={100} />
           </Link>
         )}
-      </TopSocialGroup>
-      <BottomSocialGroup>
         {instagramLink && (
           <Link href={instagramLink}>
-            <Image src="/assets/insta.png" alt="Instagram" width={70} height={70} />
+            <Image src="/assets/Instagram.png" alt="Instagram" width={100} height={100} />
           </Link>
         )}
         {linkedinLink && (
           <Link href={linkedinLink}>
-            <Image src="/assets/linkedin.png" alt="LinkedIn" width={70} height={70} />
+            <Image src="/assets/Linkedin.png" alt="LinkedIn" width={100} height={100} />
           </Link>
         )}
-      </BottomSocialGroup>
     </FooterSocialContainer>
   );
 }
-
 
 export default Footer
