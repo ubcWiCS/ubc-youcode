@@ -64,8 +64,8 @@ const BottomSocialGroup = styled(SocialGroup)`
 
 const FooterSocial = ({ facebookLink, emailLink, instagramLink, linkedinLink, flagLink, flagImage, rightOffset }) => {
   return (
-    <FooterSocialContainer $rightOffset={rightOffset}>
-      <TopSocialGroup>
+    <FooterSocialContainer id="contact" $rightOffset={rightOffset} >
+      <SocialGroup>
         {facebookLink && (
           <Link href={facebookLink}>
             <Image src="/assets/facebook.png" alt="Facebook" width={70} height={70} />
