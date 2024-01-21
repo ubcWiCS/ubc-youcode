@@ -7,7 +7,7 @@ import Link from 'next/link';
 import Register from '@/components/Register';
 import TimeLine from '@/components/TimeLine';
 import Timer from './Timeline';
-import Countdown from '@/components/Countdown';
+import Countdown from '@/components/Countdown/Countdown';
 
 
 
