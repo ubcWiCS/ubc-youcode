@@ -21,7 +21,7 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/SponsorsAndTeam.png');
+  background: url('assets/sponsors_background.svg');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;

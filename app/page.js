@@ -3,8 +3,8 @@ import Navbar from '@/components/Navbar';
 import Image from 'next/image';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Hero from '@/sections/Hero';
-import Timer from '@/sections/Timer';
-import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
+import Timeline from '@/sections/Timeline';
+import StatsAndAbout from '@/sections/StatsAndAbout';
 import ResourcesAndFaq from '@/sections/ResourcesAndFaq';
 import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
 
@@ -15,8 +15,8 @@ export default function Home() {
     <ParallaxProvider>
         <Navbar/>
         <Hero/>
-        <Timer/>
-        <StatsAndAboutAndTimeLine/>
+        <Timeline/>
+        <StatsAndAbout/>
         <ResourcesAndFaq/>
         <SponsorsAndTeam/>
      

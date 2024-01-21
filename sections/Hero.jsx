@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import Register from '@/components/Register';
 import TimeLine from '@/components/TimeLine';
-import Timer from './Timer';
+import Timer from './Timeline';
 import Countdown from '@/components/Countdown';
 
 
@@ -27,7 +27,7 @@ const BgSectionContainer = styled(SectionContainer)`
   }
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/heroBackground.png');
+  background: url('assets/hero_background.svg');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center top;

@@ -31,7 +31,7 @@ const Navbar = () => {
       
       <div className={`flex fixed top-0 w-full z-10 ease-in duration-300 bg-opacity-0 justify-between`}>
       <Link href="/" className="ml-5 mt-2 hover:scale-105 transition duration-500">
-        <Image src="/assets/Logo.png" width={70} height={70} alt="YouCode Logo"   />
+        <Image src="/assets/Logo.svg" width={70} height={70} alt="YouCode Logo"   />
       </Link>
      
         <div className="sm:hidden flex items-center"> {/* Center the hamburger menu */}
