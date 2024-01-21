@@ -15,7 +15,7 @@ const InfoContainer = styled.div`
   overflow: hidden;
 
 
-  
+
   
 `
 const BgScroll = styled(SectionContainer)`
@@ -34,14 +34,24 @@ const BgScroll = styled(SectionContainer)`
 
 `
 
+const BodyContainer = styled.div`
+  margin-top: 0rem;
+  position:relative;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  
+ 
+`
+
 
 const ResourcesAndFaq = () => {
   return (
     <InfoContainer>
-      <BgScroll>
+      <BgScroll />
+      <BodyContainer>
         <Resources/>
         <Faq/>
-      </BgScroll>
+      </BodyContainer>
     </InfoContainer>
   )
 }
