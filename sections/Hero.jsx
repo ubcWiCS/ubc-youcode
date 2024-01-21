@@ -5,6 +5,9 @@ import { SectionContainer } from '../components/SectionContainer';
 import Image from 'next/image';
 import Link from 'next/link';
 import Register from '@/components/Register';
+import TimeLine from '@/components/TimeLine';
+import Timer from './Timer';
+import Countdown from '@/components/Countdown';
 
 
 
@@ -52,8 +55,10 @@ const Hero = () => {
   return (
     <BgSectionContainer>
       <BgScroll />
-      <BodyContainer className='flex flex-col items-center justify-center z-10'>
-        <Register/>
+      <BodyContainer className='flex  items-center justify-center z-10'>
+        <Countdown className="w-1/2"/>
+        <Register />
+        
       
         
       </BodyContainer>

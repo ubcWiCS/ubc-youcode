@@ -22,7 +22,7 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/StatsAndAbout.png');
+  background: url('assets/StatsAndAbout2.png');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;
@@ -36,7 +36,7 @@ const BgScroll = styled(SectionContainer)`
 `
 const BodyContainer = styled.div`
   
-  margin-top: 13rem;
+  margin-top: 2rem;
   position:relative;
   margin-left: 2rem;
   margin-right: 2rem;
@@ -49,11 +49,10 @@ const StatsAndAboutAndTimeLine = () => {
     <InfoContainer>
       <BgScroll />
       <BodyContainer className='flex w-full flex-col z-10'>
+     
       <About/>
-      <TimeLine/>
       <Stats2/>
       
-        
       </BodyContainer>
       
       

@@ -16,7 +16,7 @@ const InfoContainer = styled.div`
   z-index: 10;
   overflow: hidden;
 
-
+  
   
   
 `
@@ -31,17 +31,17 @@ const BgScroll = styled(SectionContainer)`
   width: 100%;
   height: 100%;
 
-
 `
 
 
 const SponsorsAndTeam = () => {
   return (
     <InfoContainer>
-      <BgScroll />
-      <Sponsors/>
-      <TeamCarousel/>
-      <Footer/>
+      <BgScroll>
+        <Sponsors/>
+        <TeamCarousel/>
+        
+      </BgScroll>
     </InfoContainer>
   )
 }
