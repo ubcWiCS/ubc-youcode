@@ -23,13 +23,17 @@ const BgSectionContainer = styled(SectionContainer)`
   z-index: 0;
   overflow: hidden;
 
+
   
   }
 `
 const BgScroll = styled(SectionContainer)`
   background: url('assets/heroBackground.png');
   background-size: 100vw;
+  background-size: 100vh;
+  
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center top;
   height: 100%;
   width: 100%;
@@ -37,6 +41,7 @@ const BgScroll = styled(SectionContainer)`
   position: absolute;
   top: 0;
   z-index: 1;
+  
   
 
 `
@@ -46,6 +51,10 @@ const BodyContainer = styled.div`
   
   margin-top: 13rem;
   position:relative;
+
+  @media (max-width: 767px) {
+    margin-top: 3rem;
+  }
   
  
 `
@@ -55,7 +64,7 @@ const Hero = () => {
   return (
     <BgSectionContainer>
       <BgScroll />
-      <BodyContainer className='flex  items-center justify-center z-10'>
+      <BodyContainer className='flex flex-row  items-center justify-center z-10'>
         <Countdown className="w-1/2"/>
         <Register />
         
