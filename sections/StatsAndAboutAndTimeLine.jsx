@@ -52,6 +52,7 @@ const StatsAndAboutAndTimeLine = () => {
      
       <About/>
       <Stats2/>
+     
       
       </BodyContainer>
       

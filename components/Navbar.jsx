@@ -27,13 +27,17 @@ const Navbar = () => {
 
 
   return (
-    <div className="">
-      
-      <div className={`flex fixed top-0 w-full z-10 ease-in duration-300 bg-opacity-0 justify-between`}>
-      <Link href="/" className="ml-5 mt-2 hover:scale-105 transition duration-500">
-        <Image src="/assets/Logo.png" width={70} height={70} alt="YouCode Logo"   />
-      </Link>
-     
+
+    <div>
+      <div className={`fixed flex top-0 w-full justify-between z-10 ease-in duration-300 bg-transparent `}>
+
+      <div className="ml-2 md:ml-5 w-10 h-10 md:w-16 md:h-16 relative mt-2">
+            <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
+              <Image src="/assets/Logo.png" fill
+                    alt="YouCode Logo"   />
+            </Link>
+        </div>
+
         <div className="sm:hidden flex items-center"> {/* Center the hamburger menu */}
           <button
             className="p-2 focus:outline-none"
@@ -62,34 +66,33 @@ const Navbar = () => {
         </div>
         <div
           className={`${
-            isOpen ? "flex flex-col items-end h-screen" : "hidden"
-          } justify-end sm:flex flex-col sm:flex-row sm:w-full font-medium text-white gap-2 `}
+            isOpen ? "flex flex-col items-end justify-end z-1000 bg-white text-black" : "hidden"
+          } sm:flex flex-col sm:flex-row sm:w-full font-medium justify-end  text-dark-green md:text-white gap-1 md:gap-4 mt-4`}
         >
-          <ul className={`flex flex-col  items-end md:flex-row sm:flex text-lg 2xl:text-2xl text-white`}>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+          <ul className={`flex flex-col z-1000 md:flex-row justify-end  sm:flex text-sm lg:text-lg 2xl:text-2xl text-dark-green md:text-white`}>
+          <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/">About</Link>
             </li>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#schedule">Schedule</Link>
             </li>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4  mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#resources">Resources</Link>
             </li>
            
            
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#faq">FAQ</Link>
             </li>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#sponsors">Sponsors</Link>
             </li>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#contact">Contact</Link>
             </li>
-            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="https://www.ubcgirlcode.com/">girlCode</Link>
             </li>
-           
           </ul>
         </div>
       </div>

@@ -46,6 +46,10 @@ const BodyContainer = styled.div`
   
   margin-top: 13rem;
   position:relative;
+
+  @media (max-width: 767px) {
+    margin-top: 3rem;
+  }
   
  
 `
