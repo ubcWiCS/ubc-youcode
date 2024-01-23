@@ -27,6 +27,7 @@ const Navbar = () => {
 
 
   return (
+
     <div>
       <div className={`fixed flex top-0 w-full z-10 ease-in duration-300 bg-transparent `}>
 
@@ -36,6 +37,7 @@ const Navbar = () => {
                     alt="YouCode Logo"   />
             </Link>
         </div>
+
         <div className="sm:hidden flex items-center"> {/* Center the hamburger menu */}
           <button
             className="p-2 focus:outline-none"

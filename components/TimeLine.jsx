@@ -11,6 +11,7 @@ const TimeLine = () => {
     scale: [1, 1] });
 
   return (
+
     <div className='flex md:p-20 w-full items-center justify-center z-10' id="schedule">
   <div className="flex flex-col items-center text-center"> {/* Added 'text-center' class */}
     <p className='text-xl text-black'>Pre-hackathon workshops TBA</p>
@@ -20,6 +21,7 @@ const TimeLine = () => {
     <Image src="/assets/face_mask_unicorn.png" fill alt="pony"/>
   </div>
 </div>
+
 
   )
 }
