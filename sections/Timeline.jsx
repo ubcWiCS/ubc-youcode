@@ -18,11 +18,9 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-<<<<<<< HEAD:sections/Timer.jsx
-  background: url('assets/Background2.png');
-=======
-  background: url('assets/timeline_background.svg');
->>>>>>> 8462822be4b33e2c8bdd96a361784719fe30288f:sections/Timeline.jsx
+
+  background: url('assets/backgrounds/2.png');
+
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;

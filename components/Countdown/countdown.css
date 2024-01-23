@@ -60,7 +60,7 @@
 /* Responsive adjustments */
 @media (max-width: 600px) {
     .countdown {
-        max-width: 95%;
+        max-width: 55%;
     }
 
     .countdown h2 {

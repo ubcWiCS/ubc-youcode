@@ -28,7 +28,7 @@ const BgSectionContainer = styled(SectionContainer)`
   }
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/hero_background.svg');
+  background: url('assets/backgrounds/1.png');
   background-size: 100vw;
   background-size: 100vh;
   
@@ -65,7 +65,7 @@ const Hero = () => {
     <BgSectionContainer>
       <BgScroll />
       <BodyContainer className='flex flex-row  items-center justify-center z-10'>
-        <Countdown className="w-1/2"/>
+        {/* <Countdown className="w-1/2"/> */}
         <Register />
         
       
