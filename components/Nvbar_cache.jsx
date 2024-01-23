@@ -17,27 +17,20 @@ const Navbar = () => {
     setSmallMenu(false);
   };
 
-  const toggleSmallMenu = () => {
-    setSmallMenu(!smallMenu);
-  }
-
-  const closeSmallMenu = () => {
-    setSmallMenu(false);
-  };
+  
 
 
   return (
-
-    <div>
-      <div className={`fixed flex top-0 w-full z-10 ease-in duration-300 bg-transparent `}>
-
-      <div className="ml-2 md:ml-5 w-10 h-10 md:w-16 md:h-16 relative mt-2">
+    <div className="">
+      
+      <div className={`flex fixed top-0 w-full z-10 ease-in duration-300 bg-opacity-0 justify-between`}>
+        <div className="ml-5">
             <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
-              <Image src="/assets/Logo.png" fill
+              <Image src="/assets/Logo.png" height={70} width={70} 
                     alt="YouCode Logo"   />
             </Link>
         </div>
-
+      
         <div className="sm:hidden flex items-center"> {/* Center the hamburger menu */}
           <button
             className="p-2 focus:outline-none"
@@ -45,7 +38,7 @@ const Navbar = () => {
             aria-label="Toggle Menu"
           >
             <svg
-              className="h-6 w-6 fill-current text-white"
+              className="h-6 w-6  z-10 fill-current text-white"
               viewBox="0 0 24 24"
             >
               {isOpen ? (
@@ -66,11 +59,11 @@ const Navbar = () => {
         </div>
         <div
           className={`${
-            isOpen ? "flex flex-col items-end justify-end h-screen z-1000 bg-white text-black" : "hidden"
-          } sm:flex flex-col sm:flex-row sm:w-full font-medium justify-end text-white gap-4 mt-4`}
+            isOpen ? "flex flex-col items-center z-10 h-screen" : "hidden"
+          } justify-end sm:flex flex-col sm:flex-row sm:w-full z-10 font-medium text-white gap-2 `}
         >
-          <ul className={`flex flex-col z-1000 md:flex-row justify-end  sm:flex text-sm lg:text-lg 2xl:text-2xl text-white`}>
-          <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+          <ul className={`flex flex-col  items-end md:flex-row sm:flex text-lg 2xl:text-2xl text-white`}>
+            <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/">About</Link>
             </li>
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
@@ -93,6 +86,7 @@ const Navbar = () => {
             <li className="p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="https://www.ubcgirlcode.com/">girlCode</Link>
             </li>
+           
           </ul>
         </div>
       </div>
