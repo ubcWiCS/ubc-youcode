@@ -9,30 +9,26 @@ const InfoContainer = styled.div`
   background: #150C27;
   position: relative;
   width: 100%;
-  aspect-ratio: 1920/1080;
-
+  min-height: 100vh; 
   z-index: 10;
-  overflow: hidden;
-
-
+  overflow: visible; 
   
   
 `
 const BgScroll = styled(SectionContainer)`
   background: url('assets/TimeLineAndResources.png');
-  background-size: 100vw;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   
-  position: absolute;
-  top: 0;
+  position: relative;
+  // top: 0;
   width: 100%;
-  height: 100%;
-
+  // height: 100%;
+  min-height: 100vh;
   z-index: 0;
-
-
 `
+;
 
 
 const ResourcesAndFaq = () => {
