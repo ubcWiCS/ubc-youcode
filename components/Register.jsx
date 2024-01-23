@@ -7,7 +7,7 @@ const Register = () => {
     <div className='flex flex-col items-center justify-center w-1/2'>
       <p className='text-lg  text-dark-green font-bold  ]'>WiDS@UBC x UBC WiCS</p>
         <div className="max-w-sm">
-          <Image src="/assets/youCode.png" height={130} width={550}  />
+          <Image src="/assets/youCode.svg" height={130} width={550}  />
         </div>
 
       <p className='text-xl text-dark-green font-bold mt-5 drop-shadow-md'>24-hour wellness-themed hackathon</p>
