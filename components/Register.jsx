@@ -5,18 +5,12 @@ import Link from 'next/link';
 const Register = () => {
   return (
     <div className='flex flex-col items-center justify-center w-1/2'>
-<<<<<<< HEAD
       <p className='text-xs md:text-lg  text-dark-green font-bold  ]'>WiDS@UBC x UBC WiCS</p>
       <div className=" md:ml-5 w-48 h-12 md:w-96 md:h-28 relative ">
             <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
               <Image src="/assets/Youcode.png" fill
                     alt="YouCode Logo"   />
             </Link>
-=======
-      <p className='text-lg  text-dark-green font-bold  ]'>WiDS@UBC x UBC WiCS</p>
-        <div className="max-w-sm">
-          <Image src="/assets/youCode.svg" height={130} width={550}  />
->>>>>>> 8462822be4b33e2c8bdd96a361784719fe30288f
         </div>
 
       <p className='text-xs md:text-xl text-dark-green font-bold md:mt-5 drop-shadow-md'>24-hour wellness-themed hackathon</p>
