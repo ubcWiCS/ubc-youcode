@@ -1,3 +1,5 @@
+
+
 import React, { useRef, useEffect, useState } from 'react'
 import styled from 'styled-components'
 // eslint-disable-next-line import/no-named-default
@@ -10,19 +12,145 @@ const profiles = [
   {
     img: '/assets/team/Sandra-Radic.jpg',
     name: 'Sandra Radic',
-    emoji: 'WICS',
+    emoji: '☀️ ',
     color: '#01DACC',
-    title: 'VP External Wics',
-    social: ""
+    title: 'Founder & Co-Lead',
+    social: "https://www.linkedin.com/in/sandraradic/"
   },
+  {
+    img: '/assets/team/Arden_Choi.jpg',
+    name: 'Arden Choi',
+    emoji: '🫵 ',
+    color: '#01DACC',
+    title: 'Co-Lead',
+    social: "https://www.linkedin.com/in/ardenchoi/"
+  },
+  {
+    img: '/assets/team/Tara_Ubovic.jpeg',
+    name: 'Tara Ubovic',
+    emoji: '🐸',
+    color: '#01DACC',
+    title: 'Co-Lead',
+    social: "https://www.linkedin.com/in/tara-ubovic/"
+  },
+  {
+    img: '/assets/team/Moira.jpeg',
+    name: 'Moira Renata',
+    emoji: '🏝️',
+    color: '#01DACC',
+    title: 'Co-Lead',
+    social: "https://www.linkedin.com/in/moira-renata/"
+  },
+  {
+    img: '/assets/team/karan.png',
+    name: 'Karan Chick',
+    emoji: '🦦',
+    color: '#01DACC',
+    title: 'Social Media',
+    social: "https://www.linkedin.com/in/karan-chick/"
+  },
+  {
+    img: '/assets/team/Katie.jpeg',
+    name: 'Katie Kathiresan',
+    emoji: '✨',
+    color: '#01DACC',
+    title: 'Finance',
+    social: "https://www.linkedin.com/in/katiekathiresan/"
+  },
+  {
+    img: '/assets/team/Tanya.png',
+    name: 'Tanya',
+    emoji: '🫧',
+    color: '#01DACC',
+    title: 'Web Team Lead',
+    social: "https://www.linkedin.com/in/tanya-75a03a254/"
+  },
+  
+  {
+    img: '/assets/Logo.png',
+    name: 'Grace Co',
+    emoji: '🤪',
+    color: '#01DACC',
+    title: 'Outreach',
+    social: "https://www.linkedin.com/in/grace--co/"
+  },
+
   {
     img: '/assets/team/Carina-Tze.jpg',
     name: 'Carina Tze',
+    emoji: '🫶🏻',
+    color: '#01DACC',
+    title: 'Workshop + swag committee',
+    social: "https://www.linkedin.com/in/carinactze/"
+  },
+  {
+    img: '/assets/team/Hannah.jpeg',
+    name: 'Hannah Meaney',
     emoji: 'WICS',
     color: '#01DACC',
-    title: 'President',
-    social: ""
+    title: '🤭',
+    social: "https://www.linkedin.com/in/hannahmeaney/"
   },
+  {
+    img: '/assets/team/Megan.jpeg',
+    name: 'Megan Ong',
+    emoji: 'WICS',
+    color: '#01DACC',
+    title: '🐳',
+    social: "https://www.linkedin.com/in/hannahmeaney/"
+  },
+  {
+    img: '/assets/team/Sarah.jpeg',
+    name: 'Sarah Wong',
+    emoji: '🥰 ',
+    color: '#01DACC',
+    title: 'Workshop + Swag ',
+    social: "https://www.linkedin.com/in/sarah-ashley-wong/"
+  },
+  {
+    img: '/assets/team/Victoria.png',
+    name: 'Victoria Farkas',
+    emoji: '🥸 ',
+    color: '#01DACC',
+    title: 'Workshop + Swag',
+    social: "https://www.linkedin.com/in/victoria-farkas-617262262/"
+  },
+  {
+    img: '/assets/team/Pantea.jpeg',
+    name: 'Pantea Ghoroori',
+    emoji: '🦋 ',
+    color: '#01DACC',
+    title: 'Swag Committee',
+    social: "https://www.linkedin.com/in/pantea-ghoroori-4a3a66227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+  },
+
+  {
+    img: '/assets/team/ChohyeonKim.png',
+    name: 'Chohyeon Kim',
+    emoji: '👻 ',
+    color: '#01DACC',
+    title: 'Web Team',
+    social: "https://www.linkedin.com/in/chohyeon-k-586614230/"
+  },
+  
+  {
+    img: '/assets/team/Yeojun-Han.jpg',
+    name: 'Yeojun Han',
+    emoji: '🧸',
+    color: '#01DACC',
+    title: 'Finance',
+    social: "https://www.linkedin.com/in/yeojun/"
+  },
+
+  {
+    img: '/assets/team/Kaitlin.png',
+    name: 'Kaitlin Khu',
+    emoji: '😽',
+    color: '#01DACC',
+    title: 'Social Media',
+    social: "https://www.linkedin.com/in/kaitlinkhu/"
+  },
+
   {
     img: '/assets/team/Selin-Uz.jpeg',
     name: 'Selin Uz',
@@ -32,22 +160,8 @@ const profiles = [
     social: ""
   },
 
-  {
-    img: '/assets/team/Trisha-Sia.jpeg',
-    name: 'Trisha Sia',
-    emoji: 'WICS',
-    color: '#01DACC',
-    title: '',
-    social: ""
-  },
-  {
-    img: '/assets/team/Yeojun-Han.jpg',
-    name: 'Yeojun Han',
-    emoji: 'WICS',
-    color: '#01DACC',
-    title: '',
-    social: ""
-  },
+
+  
   
 ];
 
@@ -69,16 +183,16 @@ const ProfileContent = styled.p`
   span {
     margin-right: 8px;
   }
-  height: 1em;
-  font-size:1rem;
+  
+  
   b {
     margin-right: 8px;
   }
 `
 
 const ProfileList = styled.div`
-  overflow-x: hidden;
-  white-space: nowrap;
+  // overflow-x: hidden;
+  // white-space: nowrap;
 `
 
 
@@ -139,15 +253,18 @@ export default function Team() {
   }, [setAnimator])
 
   return (
-    <>
-      <div className="w-full text-center m-2 md:mt-20 items-center justify-center">
-        <ProfileContent>
-          <span className='text-xs text-dark-green font-normal'>
-            <b>{selectedProfile?.name}</b> {selectedProfile?.emoji}
-          </span>{' '}
-          {selectedProfile?.title}
-        </ProfileContent>
-      </div>
+    <div className='md: block'>
+      <div className="w-full text-center m-2 md:mt-20 flex items-center justify-center">
+  
+    <span className="text-[5px] md:text-lg text-[#C7444D] font-normal">
+      <b className="mr-2">{selectedProfile?.name}</b> {selectedProfile?.emoji} {'\u00A0'}
+    </span>
+    <span className="text-[5px] md:text-lg text-[#C7444D] font-bold">
+      {selectedProfile?.title}
+    </span>
+  
+</div>
+
       <ProfileList
         onMouseEnter={() => {
           setAccel(-1)
@@ -157,12 +274,12 @@ export default function Team() {
         }}
       >
         
-        <div style={{ willChange: 'transform' }} className="flex flex-row gap-5 md:mt-5 " id='anim-profiles'>
+        <div style={{ willChange: 'transform' }} className="flex flex-row md:mt-5 gap-[2px] md:gap-3 " id='anim-profiles'>
           {profiles.map((profile) => (
-            <div className="w-10 h-10 md:w-24 md:h-24 relative" key={profile.img}>
+            <div className=" w-4 h-4 md:w-36 md:h-20 relative " key={profile.img}>
               <Link href={profile.social} >
                 <Image
-                  className='rounded-lg  mx-5 transform transition-transform hover:scale-115'
+                  className='rounded-sm md:rounded-lg  transform transition-transform hover:scale-115'
                   fill
                   src={profile.img}
                   onClick={() => setSelectedProfile(profile)}
@@ -175,6 +292,6 @@ export default function Team() {
           
         </div>
       </ProfileList>
-    </>
+    </div>
   )
 }
