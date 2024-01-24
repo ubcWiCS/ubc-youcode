@@ -49,6 +49,20 @@
     color: #FFFFFF;
     font-family: 'alarm clock', sans-serif;
     margin-bottom: -0.2em;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.countdown .value.changed {
+    animation: flip 0.6s ease; /* Add flip animation for changed values */
+}
+
+@keyframes flip {
+    from {
+        transform: rotateX(0deg);
+    }
+    to {
+        transform: rotateX(360deg);
+    }
 }
 
 .countdown .label {
@@ -58,20 +72,37 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 600px) {
+@media (max-width: 450px) {
     .countdown {
-        max-width: 95%;
+        max-width: 55%;
+        padding: 0rem 1rem;
     }
 
-    .countdown h2 {
-        font-size: 1.2em;
+    .countdown .header {
+        width: 55%;
+        padding: 0.1rem;
+        border: 1px solid #ffffff;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        font-size: 0.4em;
+        letter-spacing: 0.1em;
+    }
+
+    .countdown .content {
+        border: 1px solid #4ECDC4;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding: 0rem 0rem;
+        gap: 0px;
     }
 
     .countdown .value {
-        font-size: 2.5em;
+        font-size: 1.5em;
     }
 
     .countdown .label {
-        font-size: 1em;
+        font-size: 0.8em;
     }
 } 

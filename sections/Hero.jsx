@@ -62,9 +62,6 @@ const Hero = () => {
       <BodyContainer className='flex  items-center justify-center z-10'>
         <Countdown className="w-1/2"/>
         <Register />
-        
-      
-        
       </BodyContainer>
      
     </BgSectionContainer>
