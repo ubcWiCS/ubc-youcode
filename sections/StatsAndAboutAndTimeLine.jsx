@@ -36,7 +36,7 @@ const BgScroll = styled(SectionContainer)`
 `
 const BodyContainer = styled.div`
   
-  margin-top: 2rem;
+  margin-top: 1rem;
   position:relative;
   margin-left: 2rem;
   margin-right: 2rem;

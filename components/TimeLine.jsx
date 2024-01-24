@@ -17,7 +17,7 @@ const TimeLine = () => {
     <p className='text-xs md:text-xl text-dark-green font-bold'>Pre-hackathon workshops TBA</p>
     <p className='text-xs md:text-xl text-dark-green font-bold'> Hackathon April 5-6</p>
   </div>
-  <div className="hidden md:block flex z-20 items-end justify-end w-48 h-56 md:w-48 md:h-60  bottom-20 right-20" ref={ponyRef} style={ponyStyle}>
+  <div className="hidden md:block flex z-20 w-48 h-56 md:w-48 md:h-60 absolute bottom-40 right-80" ref={ponyRef} style={ponyStyle}>
     <Image src="/assets/face_mask_unicorn.png" fill alt="pony"/>
   </div>
 </div>

@@ -70,6 +70,7 @@ const ProfileContent = styled.p`
     margin-right: 8px;
   }
   height: 1em;
+  font-size:1rem;
   b {
     margin-right: 8px;
   }
@@ -139,13 +140,14 @@ export default function Team() {
 
   return (
     <>
-      
-      <ProfileContent>
-        <span>
-          <b>{selectedProfile?.name}</b> {selectedProfile?.emoji}
-        </span>{' '}
-        {selectedProfile?.title}
-      </ProfileContent>
+      <div className="w-full text-center m-2 md:mt-20 items-center justify-center">
+        <ProfileContent>
+          <span className='text-xs text-dark-green font-normal'>
+            <b>{selectedProfile?.name}</b> {selectedProfile?.emoji}
+          </span>{' '}
+          {selectedProfile?.title}
+        </ProfileContent>
+      </div>
       <ProfileList
         onMouseEnter={() => {
           setAccel(-1)
@@ -155,19 +157,20 @@ export default function Team() {
         }}
       >
         
-        <div style={{ willChange: 'transform' }} className="flex flex-row" id='anim-profiles'>
+        <div style={{ willChange: 'transform' }} className="flex flex-row gap-5 md:mt-5 " id='anim-profiles'>
           {profiles.map((profile) => (
-            <Link href={profile.social} key={profile.img}>
-              <Image
-                className='rounded-lg  mx-5 transform transition-transform hover:scale-115'
-                width={100}
-                height={100}
-                src={profile.img}
-                onClick={() => setSelectedProfile(profile)}
-                onMouseEnter={() => setSelectedProfile(profile)}
-                onMouseLeave={() => setSelectedProfile({})}
-              />
-            </Link>
+            <div className="w-10 h-10 md:w-24 md:h-24 relative" key={profile.img}>
+              <Link href={profile.social} >
+                <Image
+                  className='rounded-lg  mx-5 transform transition-transform hover:scale-115'
+                  fill
+                  src={profile.img}
+                  onClick={() => setSelectedProfile(profile)}
+                  onMouseEnter={() => setSelectedProfile(profile)}
+                  onMouseLeave={() => setSelectedProfile({})}
+                />
+              </Link>
+            </div>
           ))}
           
         </div>

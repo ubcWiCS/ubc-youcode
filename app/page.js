@@ -7,6 +7,7 @@ import Timer from '@/sections/Timer';
 import StatsAndAboutAndTimeLine from '@/sections/StatsAndAboutAndTimeLine';
 import ResourcesAndFaq from '@/sections/ResourcesAndFaq';
 import SponsorsAndTeam from '@/sections/SponsorsAndTeam';
+import FaqMobile from '@/sections/FaqMobile';
 
 
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Timer/>
         <StatsAndAboutAndTimeLine/>
         <ResourcesAndFaq/>
+        <FaqMobile className="md:hidden"/>
         <SponsorsAndTeam/>
      
     </ParallaxProvider>
