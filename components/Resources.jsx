@@ -18,7 +18,7 @@ const Resources = () => {
   }
   return (
     <div className='resources ml-8 mt-4 md:mt-0' id="resources">
-      <div className="text-lg md:text-5xl text-dark-green font-bold mb-1 md:mb-7 drop-shadow-[0_0_4px_#E2D6FF] ">
+      <div className="text-lg  md:text-3xl lg:text-5xl text-dark-green font-bold mb-1 md:mb-7 drop-shadow-[0_0_4px_#E2D6FF] ">
           youCode 2024 Playlist 🎹 🎧
         </div>
         <div className='flex gap-2 md:mt-2 mb-3 md:mb-10'>

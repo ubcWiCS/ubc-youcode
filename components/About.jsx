@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div className='flex'>
       <div className="flex flex-col w-1/2">
-        <div className="text-lg md:text-5xl text-dark-green font-bold drop-shadow-[0_0_4px_#E2D6FF] ">
+        <div className="text-lg md:text-3xl lg:text-5xl text-dark-green font-bold drop-shadow-[0_0_4px_#E2D6FF] ">
           About youCode 💻 🦄
         </div>
         <Stats/>

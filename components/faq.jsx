@@ -38,10 +38,10 @@ const FaqItem = ({ question, answer }) => {
 const FaqSection = () => {
   return (
     <div className="bg-teal-200 p-3 md:p-14 rounded-3xl md:bg-white/[0.1] md:m-20  items-center justify-center" id="faq">
-      <p className='text-center text-lg md:text-5xl font-bold text-white drop-shadow-[0_0_4px_#E2D6FF] mb-[2px] md:mb-20 '> 
+      <p className='text-center text-lg  md:text-3xl lg:text-5xl font-bold text-white drop-shadow-[0_0_4px_#E2D6FF] mb-[2px] md:mb-20 '> 
         Curious 🤔 ❓ 
       </p>
-      <div className="grid grid-cols-1 mx-10  md:mx-20  md:grid-cols-2 gap-x-2 gap-y-1 md:gap-x-12 md:gap-y-4">
+      <div className="grid grid-cols-1 mx-10  lg:mx-20  md:grid-cols-2 gap-x-2 gap-y-1 md:gap-x-12 md:gap-y-4">
         {faqs.map((faq, index) => (
           <FaqItem key={index} {...faq} />
         ))}

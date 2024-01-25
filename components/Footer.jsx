@@ -72,7 +72,7 @@ const FooterSocialContainer = styled.div`
 
 const FooterSocial = ({ direction, facebookLink, emailLink, instagramLink, linkedinLink, Logolink, LogoImage }) => {
   return (
-    <FooterSocialContainer direction={direction} >
+    <FooterSocialContainer direction={direction} id="contact">
         {Logolink && LogoImage && (
         <Link href={Logolink}>
           <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
