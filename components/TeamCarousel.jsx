@@ -62,7 +62,7 @@ const profiles = [
     name: 'Tanya',
     emoji: '🫧',
     color: '#01DACC',
-    title: 'Web Team Lead',
+    title: 'Website Team Lead',
     social: "https://www.linkedin.com/in/tanya-75a03a254/"
   },
   
@@ -96,7 +96,7 @@ const profiles = [
     name: '🐳',
     emoji: 'WICS',
     color: '#01DACC',
-    title: 'Web Team',
+    title: 'Website Team',
     social: "https://www.linkedin.com/in/hannahmeaney/"
   },
   {
@@ -129,7 +129,7 @@ const profiles = [
     name: 'Chohyeon Kim',
     emoji: '👻 ',
     color: '#01DACC',
-    title: 'Web Team',
+    title: 'Website Team',
     social: "https://www.linkedin.com/in/chohyeon-k-586614230/"
   },
   
@@ -156,7 +156,7 @@ const profiles = [
     name: 'Selin Uz',
     emoji: '🕺',
     color: '#01DACC',
-    title: 'Web Team',
+    title: 'Website Team',
     social: ""
   },
   {
@@ -184,7 +184,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/angeliqueclara/"
   },
   {
-    img: '/assets/Logo',
+    img: '/assets/Logo.png',
     name: 'Alizah Irfan',
     emoji: '🐤',
     color: '#01DACC',
@@ -208,12 +208,44 @@ const profiles = [
     social: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BywYhXZUiRuSGfAKJulF3aw%3D%3D"
   },
   {
-    img: '/assets/team/',
-    name: 'Olivia Lam',
-    emoji: '🦖',
+    img: '/assets/team/fatima.jpeg',
+    name: 'Fatima Yahya',
+    emoji: '👀',
     color: '#01DACC',
-    title: 'Marketing',
-    social: ""
+    title: 'Outreach',
+    social: "https://www.linkedin.com/in/fatima-yahya-27ba43112/"
+  },
+  {
+    img: '/assets/team/tetiksha.png',
+    name: 'Tetiksha Jain',
+    emoji: '🦄',
+    color: '#01DACC',
+    title: 'Outreach',
+    social: "https://www.linkedin.com/in/tetiksha-jain/"
+  },
+  {
+    img: '/assets/team/iris.jpeg',
+    name: 'Iris Caglayan',
+    emoji: '🦄',
+    color: '#01DACC',
+    title: 'Events',
+    social: "https://www.linkedin.com/in/iriscaglayan/"
+  },
+  {
+    img: '/assets/Logo.png',
+    name: 'Khammy Saychaleun',
+    emoji: '🦄',
+    color: '#01DACC',
+    title: 'Marketing + Website',
+    social: "https://www.linkedin.com/in/khammy-saychaleun-26290817b/"
+  },
+  {
+    img: '/assets/Logo.png',
+    name: 'Sonja Deng',
+    emoji: '🦭',
+    color: '#01DACC',
+    title: 'Swag',
+    social: "https://www.linkedin.com/in/sonja-deng-0a5a79289/"
   },
 
 
@@ -272,12 +304,14 @@ export default function Team() {
       accumulateTime = t
     } else {
       const deltaT = t - lastTime
-      vel = velocity + 0.05 * accelP
+      vel = velocity + 0.1 * accelP
       vel = Math.max(0, vel)
       vel = Math.min(MAX_SPEED, vel)
       accumulateTime += deltaT * vel
     }
     lastTime = t
+
+
     animator.tick(accumulateTime)
     requestRef.current = window.requestAnimationFrame((tP) =>
       animate(animatorP, accelP, vel || velocity, tP)
@@ -330,9 +364,9 @@ export default function Team() {
         }}
       >
         
-        <div style={{ willChange: 'transform' }} className="flex flex-row md:mt-5 gap-[2px] md:gap-[5px] lg:gap-3 " id='anim-profiles'>
+        <div style={{ willChange: 'transform' }} className="flex flex-row md:mt-5 gap-[2px] md:gap-[5px] lg:gap-3  " id='anim-profiles'>
           {profiles.map((profile) => (
-            <div className=" w-4 h-4 md:w-12 md:h-12 lg:w-36 lg:h-20 relative " key={profile.img}>
+            <div className=" w-4 h-4 md:w-7 md:h-7 lg:w-20 lg:h-20 relative " key={profile.name} style={{ flexShrink: 0 }}>
               <Link href={profile.social} >
                 <Image
                   className='rounded-sm md:rounded-lg  transform transition-transform hover:scale-115'

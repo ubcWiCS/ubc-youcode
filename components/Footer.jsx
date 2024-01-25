@@ -83,7 +83,7 @@ const FooterSocial = ({ direction, facebookLink, emailLink, instagramLink, linke
         {facebookLink && (
           <Link href={facebookLink}>
             <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
-            <Image src="/assets/Facebook.png" alt="Facebook" fill/>
+            <Image src="/assets/facebook.png" alt="Facebook" fill/>
             </div>
           </Link>
         )}
