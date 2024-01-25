@@ -11,10 +11,10 @@ const About = () => {
         <Stats/>
       </div>
       <div className='w-1/2'>
-        <p className='hidden md:block text-white text-xs md:text-lg mr-20 mt-10'>
+        <p className='hidden md:block text-white text-xs md:text-xs lg:text-lg mr-20 mt-10'>
         Dedicated to fostering gender inclusivity and breaking traditional norms in the tech industry. As we strive to build opportunities for underrepresented genders interested in tech to innovate, we create tight, welcoming communities where we empower each other. Continuing to build meaningful networks in a supportive environment is our ultimate mission.
         </p>
-        <p className='hidden md:block text-white text-xs md:text-lg mr-20 mt-10 font-bold'>
+        <p className='hidden md:block text-white text-xs  md:text-xs lg:text-lg mr-20 mt-10 font-bold'>
         Our values: Inclusivity, Visibility, Community, Wellbeing.
         </p>
         

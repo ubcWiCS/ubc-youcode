@@ -86,17 +86,17 @@ const profiles = [
   {
     img: '/assets/team/Hannah.jpeg',
     name: 'Hannah Meaney',
-    emoji: 'WICS',
+    emoji: '🤭',
     color: '#01DACC',
-    title: '🤭',
+    title: 'Workshop + Social Media',
     social: "https://www.linkedin.com/in/hannahmeaney/"
   },
   {
     img: '/assets/team/Megan.jpeg',
-    name: 'Megan Ong',
+    name: '🐳',
     emoji: 'WICS',
     color: '#01DACC',
-    title: '🐳',
+    title: 'Web Team',
     social: "https://www.linkedin.com/in/hannahmeaney/"
   },
   {
@@ -154,9 +154,65 @@ const profiles = [
   {
     img: '/assets/team/Selin-Uz.jpeg',
     name: 'Selin Uz',
-    emoji: 'WICS',
+    emoji: '🕺',
     color: '#01DACC',
-    title: '',
+    title: 'Web Team',
+    social: ""
+  },
+  {
+    img: '/assets/team/zelalem.png',
+    name: 'Zelalem Araya',
+    emoji: '❣️',
+    color: '#01DACC',
+    title: 'Workshop',
+    social: "https://www.linkedin.com/in/zelalem-araya/"
+  },
+  {
+    img: '/assets/Logo.png',
+    name: 'Shannon Aurelia',
+    emoji: '🩰',
+    color: '#01DACC',
+    title: 'Workshop',
+    social: "https://www.linkedin.com/in/shannon-aurelia-s/"
+  },
+  {
+    img: '/assets/team/angelique.jpeg',
+    name: 'Angelique Clara Hanzell',
+    emoji: '🐇',
+    color: '#01DACC',
+    title: 'Swag',
+    social: "https://www.linkedin.com/in/angeliqueclara/"
+  },
+  {
+    img: '/assets/Logo',
+    name: 'Alizah Irfan',
+    emoji: '🐤',
+    color: '#01DACC',
+    title: 'Marketing',
+    social: ""
+  },
+  {
+    img: '/assets/team/prajna.png',
+    name: 'Prajna Nayak',
+    emoji: '🍉',
+    color: '#01DACC',
+    title: 'Website + Swag',
+    social: "https://www.linkedin.com/in/prajna-nayak-807b1a247/"
+  },
+  {
+    img: '/assets/team/olivia.jpeg',
+    name: 'Olivia Lam',
+    emoji: '🦖',
+    color: '#01DACC',
+    title: 'Website',
+    social: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BywYhXZUiRuSGfAKJulF3aw%3D%3D"
+  },
+  {
+    img: '/assets/team/',
+    name: 'Olivia Lam',
+    emoji: '🦖',
+    color: '#01DACC',
+    title: 'Marketing',
     social: ""
   },
 
@@ -253,13 +309,13 @@ export default function Team() {
   }, [setAnimator])
 
   return (
-    <div className='md: block'>
-      <div className="w-full text-center m-2 md:mt-20 flex items-center justify-center">
+    <div className=''>
+      <div className="w-full text-center mt-2 md:mt-7 lg:mt-20 flex items-center justify-center">
   
     <span className="text-[5px] md:text-lg text-[#C7444D] font-normal">
       <b className="mr-2">{selectedProfile?.name}</b> {selectedProfile?.emoji} {'\u00A0'}
     </span>
-    <span className="text-[5px] md:text-lg text-[#C7444D] font-bold">
+    <span className="text-[5px] md:text-sm lg:text-lg text-[#C7444D] font-bold">
       {selectedProfile?.title}
     </span>
   
@@ -274,9 +330,9 @@ export default function Team() {
         }}
       >
         
-        <div style={{ willChange: 'transform' }} className="flex flex-row md:mt-5 gap-[2px] md:gap-3 " id='anim-profiles'>
+        <div style={{ willChange: 'transform' }} className="flex flex-row md:mt-5 gap-[2px] md:gap-[5px] lg:gap-3 " id='anim-profiles'>
           {profiles.map((profile) => (
-            <div className=" w-4 h-4 md:w-36 md:h-20 relative " key={profile.img}>
+            <div className=" w-4 h-4 md:w-12 md:h-12 lg:w-36 lg:h-20 relative " key={profile.img}>
               <Link href={profile.social} >
                 <Image
                   className='rounded-sm md:rounded-lg  transform transition-transform hover:scale-115'

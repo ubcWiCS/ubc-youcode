@@ -75,35 +75,35 @@ const FooterSocial = ({ direction, facebookLink, emailLink, instagramLink, linke
     <FooterSocialContainer direction={direction} id="contact">
         {Logolink && LogoImage && (
         <Link href={Logolink}>
-          <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
+          <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
             <Image src={LogoImage} alt="Flag" fill  />
           </div>
         </Link>
         )}
         {facebookLink && (
           <Link href={facebookLink}>
-            <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
+            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
             <Image src="/assets/Facebook.png" alt="Facebook" fill/>
             </div>
           </Link>
         )}
         {emailLink && (
           <Link href={emailLink}>
-            <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
+            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
             <Image src="/assets/Mail.png" alt="Mail" fill />
             </div>
           </Link>
         )}
         {instagramLink && (
           <Link href={instagramLink}>
-            <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
+            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
             <Image src="/assets/Instagram.png" alt="Instagram" fill />
             </div>
           </Link>
         )}
         {linkedinLink && (
           <Link href={linkedinLink}>
-            <div className="w-4 h-4 md:w-10 md:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
+            <div className="w-4 h-4 md:w-6 md:h-6 lg:w-10 lg:h-10 w-12 h-12 relative  hover:scale-110 transition duration-500">
             <Image src="/assets/Linkedin.png" alt="LinkedIn" fill />
             </div>
           </Link>

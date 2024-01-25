@@ -21,13 +21,13 @@ const FaqItem = ({ question, answer }) => {
     <div className="mb-[2px] md:mb-4 flex flex-col">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-[7px] md:text-lg flex justify-between items-center w-full px-2 py-[2px] md:px-4 md:py-3 text-left text-white md:font-semibold bg-teal/[0.7] rounded-2xl hover:bg-teal focus:outline-none focus:ring-2 focus:ring-teal"
+        className="text-[7px] md:text-sm lg:text-lg flex justify-between items-center w-full px-2 py-[2px] md:px-4  md:py-[5px] lg:py-3 text-left text-white md:font-semibold bg-teal/[0.7] rounded-2xl hover:bg-teal focus:outline-none focus:ring-2 focus:ring-teal"
       >
         {question}
         <span>{isOpen ? <MdExpandLess /> : <MdExpandMore />}</span> 
       </button>
       {isOpen && (
-        <div className="mt-1 md:mt-2 p-2 md:p-4 text-[7px] md:text-lg  rounded-lg text-white">
+        <div className="mt-1 lg:mt-2 p-2 md:p-4 text-[7px] md:text-xs lg:text-lg  rounded-lg text-white">
           {answer}
         </div>
       )}
@@ -37,11 +37,11 @@ const FaqItem = ({ question, answer }) => {
 
 const FaqSection = () => {
   return (
-    <div className="bg-teal-200 p-3 md:p-14 rounded-3xl md:bg-white/[0.1] md:m-20  items-center justify-center" id="faq">
-      <p className='text-center text-lg  md:text-3xl lg:text-5xl font-bold text-white drop-shadow-[0_0_4px_#E2D6FF] mb-[2px] md:mb-20 '> 
+    <div className="bg-teal-200 p-3 md:p-4 lg:p-14 rounded-3xl lg:bg-white/[0.1] md:m-10 lg:m-20  items-center justify-center" id="faq">
+      <p className='text-center text-lg  md:text-3xl lg:text-5xl font-bold text-white drop-shadow-[0_0_4px_#E2D6FF] mb-[2px] md:mb-7 lg:mb-20 '> 
         Curious 🤔 ❓ 
       </p>
-      <div className="grid grid-cols-1 mx-10  lg:mx-20  md:grid-cols-2 gap-x-2 gap-y-1 md:gap-x-12 md:gap-y-4">
+      <div className="grid grid-cols-1 mx-10  lg:mx-20  md:grid-cols-2 gap-x-2 gap-y-1 md:gap-x-5 lg:gap-x-12 md:gap-y-1 lg:gap-y-4">
         {faqs.map((faq, index) => (
           <FaqItem key={index} {...faq} />
         ))}
