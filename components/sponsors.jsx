@@ -18,9 +18,10 @@ const Sponsors = () => {
         Our Sponsors: 
       </p>
       <div className="mt-40"></div>
-      <div className="flex mx-20" ref={cloud1Ref} style={cloud1Style}>
-        <Image src="/assets/arcteryx.png" height={200} width={200}  />
-      </div>
+
+      <div className="flex mx-20  w-48 h-48 md:w-64 md:h-48 relative" ref={cloud1Ref} style={cloud1Style}>
+        <Image src="/assets/arcteryx.png" fill  />
+     </div>
       
     </div>
   )

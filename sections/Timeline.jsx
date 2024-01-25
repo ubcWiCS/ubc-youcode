@@ -2,11 +2,7 @@ import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
 import styled from 'styled-components';
 import { SectionContainer } from '../components/SectionContainer';
-import Stats from '@/components/Stats';
-import About from '@/components/About';
 import TimeLine from '@/components/TimeLine';
-import Stats2 from '@/components/Stats2';
-
 
 const InfoContainer = styled.div`
   background: #150C27;
@@ -22,7 +18,11 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/StatsAndAbout2.png');
+<<<<<<< HEAD:sections/Timer.jsx
+  background: url('assets/Background2.png');
+=======
+  background: url('assets/timeline_background.svg');
+>>>>>>> 8462822be4b33e2c8bdd96a361784719fe30288f:sections/Timeline.jsx
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;
@@ -34,25 +34,27 @@ const BgScroll = styled(SectionContainer)`
 
 
 `
+
+
+
 const BodyContainer = styled.div`
   
-  margin-top: 2rem;
   position:relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
   
  
 `
 
-const StatsAndAboutAndTimeLine = () => {
+
+
+const Timer = () => {
   return (
     <InfoContainer>
       <BgScroll />
-      <BodyContainer className='flex w-full flex-col z-10'>
-     
-      <About/>
-      <Stats2/>
+      <BodyContainer className='flex flex-col items-center justify-center z-10'>
+        
+      <TimeLine/>
       
+        
       </BodyContainer>
       
       
@@ -60,4 +62,4 @@ const StatsAndAboutAndTimeLine = () => {
   )
 }
 
-export default StatsAndAboutAndTimeLine
+export default Timer

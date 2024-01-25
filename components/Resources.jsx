@@ -20,7 +20,7 @@ const Resources = () => {
         <div className="text-white drop-shadow-lg font-inter text-base">Public playlist</div>
         <div className="text-white drop-shadow-lg font-inter text-2xl font-extrabold">youCode 2024 playlist</div>
         <div className='icons w-[347px] h-[81px] relative flex-row flex'>
-          <Image src='/assets/spotify-icons/spotify.png' width={59} height={60}/>
+          <Image src='/assets/spotify-icons/spotify.svg' width={59} height={60}/>
           <Image src='/assets/spotify-icons/download.svg' width={59} height={60}/>
           <Image src='/assets/spotify-icons/shuffle.svg' width={59} height={60}/>
           <div className="text-black p-5">...</div>
