@@ -44,7 +44,7 @@ const BgScroll = styled(SectionContainer)`
 
 const BodyContainer = styled.div`
   
-  margin-top: 13rem;
+  margin-top: 3rem;
   position:relative;
 
   @media (min-width: 576px) {
@@ -53,6 +53,10 @@ const BodyContainer = styled.div`
 
   @media (min-width: 768px) {
     margin-top: 4rem;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 13rem;
   }
   
  

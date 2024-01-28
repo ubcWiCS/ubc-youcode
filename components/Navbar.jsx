@@ -79,7 +79,7 @@ const Navbar = () => {
         
           <ul className={`flex flex-col z-1000 md:flex-row justify-end  sm:flex text-[7px] md:text-[10px] lg:text-lg 2xl:text-2xl text-dark-green md:text-white`}>
           <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
-              <Link onClick={closeMenu} href="/">About</Link>
+              <Link onClick={closeMenu} href="/#about">About</Link>
             </li>
             <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="/#schedule">Schedule</Link>
