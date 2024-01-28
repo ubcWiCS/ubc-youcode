@@ -72,7 +72,7 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 450px) {
+@media (min-width: 576px) {
     .countdown {
         max-width: 55%;
         padding: 0rem 1rem;
@@ -108,7 +108,7 @@
 } 
 
 /* Responsive adjustments */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
     .countdown {
         max-width: 50%;
         padding: 0rem ;

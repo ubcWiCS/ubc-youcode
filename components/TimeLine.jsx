@@ -13,9 +13,14 @@ const TimeLine = () => {
   return (
 
     <div className='flex lg:p-20 w-full items-center justify-center z-10' id="schedule">
-  <div className="flex flex-col items-center text-center mt-24 md:mt-40 lg:mt-80 gap-2 md:gap-10"> 
-    <p className='text-xs md:text-xl text-dark-green font-bold'>Pre-hackathon workshops TBA</p>
-    <p className='text-xs md:text-xl text-dark-green font-bold'> Hackathon April 5-6</p>
+  <div className="flex flex-col items-center justify-center  mt-20 md:mt-40 lg:mt-60 gap-2 md:gap-10"> 
+  <p className='text-sm md:text-xl lg:text-3xl text-dark-green font-bold'>Timeline</p>
+    <div className="flex flex-col items-center text-center  gap-1 lg:gap-10">
+      <p className='text-[10px] md:text-lg lg:text-xl text-dark-green font-bold'>March 1st: Registration opens</p>
+      <p className='text-[10px] md:text-lg lg:text-xl  text-dark-green font-bold'>Pre-Hackathon Workshops TBA</p>
+      <p className='text-[10px] md:text-lg lg:text-xl  text-dark-green font-bold'>April 5th: Hacking Begins!</p>
+    </div>
+    
   </div>
   <div className="hidden md:block flex z-20 w-48 h-56 md:w-32 md:h-40 lg:w-44 lg:h-60 absolute md:bottom-20 md:right-40 lg:bottom-40 lg:right-80" ref={ponyRef} style={ponyStyle}>
     <Image src="/assets/face_mask_unicorn.png" fill alt="pony"/>
