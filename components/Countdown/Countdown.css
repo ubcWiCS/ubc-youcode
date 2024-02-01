@@ -1,6 +1,6 @@
 .countdown {
-    max-width: 100%;
-    padding: 0rem 4rem;
+    max-width: 50%;
+    padding: 0rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -13,16 +13,22 @@
   }
 
 .countdown .header {
-    width: 50%;
-    padding: 0.4rem;
+    
+    padding: 0.1rem;
     background: rgba(26, 83, 92, 0.74);
-    border: 3px solid #ffffff;
-    border-radius: 10px 10px 0 0;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    font-size: 1.2em;
+    
+    font-size: 0.1em;
     color: #FFFFFF;
-    letter-spacing: 0.2em;
+    
+
+    width: 55%;
+        
+        border: 1px solid #ffffff;
+        border-radius: 5px 5px 0 0;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        text-align: center;
+        
+        letter-spacing: 0.1em;
 }
 
 .countdown .content {
@@ -30,22 +36,30 @@
     justify-content: space-around; 
     align-items: center; 
     background: rgba(26, 83, 92, 0.74);
-    border: 3px solid #4ECDC4;
-    border-radius: 50px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    width: 100%;
-    padding: 0.6rem 4rem;
-    gap: 60px;
+    
+    
+    
+    
+   
+    
+
+
+    border: 1px solid #4ECDC4;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        width: 100%;
+        padding: 0.1rem;
+        gap: 0px;
 }
 
 .countdown .box {
     flex: 1; 
     text-align: center;
-    margin: 0 7px;
+    margin: 0 3px;
 }
 
 .countdown .value {
-    font-size: 6em;
+    font-size: 0.3em;
     color: #FFFFFF;
     font-family: 'alarm clock', sans-serif;
     margin-bottom: -0.2em;
@@ -66,7 +80,7 @@
 }
 
 .countdown .label {
-    font-size: 2.5em;
+    font-size: 0.2em;
     color: #FFFFFF;
     font-family: 'alarm clock', sans-serif;
 }

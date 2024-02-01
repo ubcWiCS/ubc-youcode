@@ -56,8 +56,8 @@ const Resources = () => {
     <Resource number="1." title="What is a hackathon?" topic="Learn about hackathons" link="https://www.techtarget.com/searchcio/definition/hackathon"/>
     <Resource number="2." title="Hackathon 101" topic="How to prepare for a hackathon" link="https://blog.streamlit.io/hackathon-101-5-simple-tips-for-beginners/amp/"/>
     <Resource number="3." title="Design" topic="Learn how to design projects" link="https://www.figma.com/resource-library/ux-design/"/>
-    <Resource number="4." title="Github 101" topic="Collaborate using github" link="https://docs.github.com/en/get-started/quickstart/hello-world"/>
-    <Resource number="5." title="Building projects" topic="Effectively building projects." link="https://hackthenorth.medium.com/building-projects-effectively-at-hackathons-997e5b1c2b1d"/>
+    <Resource number="4." title="GitHub 101" topic="Collaborate using GitHub" link="https://docs.github.com/en/get-started/quickstart/hello-world"/>
+    <Resource number="5." title="Building projects" topic="Effectively building projects" link="https://hackthenorth.medium.com/building-projects-effectively-at-hackathons-997e5b1c2b1d"/>
     
 
     </ul>

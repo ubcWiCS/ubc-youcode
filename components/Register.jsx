@@ -21,7 +21,7 @@ const Register = () => {
         <p className='hidden text-[12px]  md:text-xl lg:text-2xl bg-[#B72E38] border-[#C7444D]/[1] px-7 rounded-3xl py-1 transform hover:scale-105 transition duration-500 drop-shadow-xl '>
           Apply!
         </p>
-        <p className='text-[12px]  md:text-xl lg:text-2xl  px-7 rounded-3xl py-1 transform hover:scale-105 transition duration-500 drop-shadow-xl '>
+        <p className='text-[8px]  md:text-xl lg:text-2xl  px-7 rounded-3xl py-1 transform hover:scale-105 transition duration-500 drop-shadow-xl '>
           Registration opens in March!
         </p>
       </Link>
