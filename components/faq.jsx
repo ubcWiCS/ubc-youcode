@@ -39,7 +39,7 @@ const FaqSection = () => {
   return (
     <div className="bg-teal-200 p-3 md:p-4 lg:p-14 rounded-3xl lg:bg-white/[0.1] md:m-10 lg:m-20  items-center justify-center" id="faq">
       <p className='text-center text-lg  md:text-3xl lg:text-5xl font-bold text-white drop-shadow-[0_0_4px_#E2D6FF] mb-[2px] md:mb-7 lg:mb-20 '> 
-        Curious 🤔 ❓ 
+        FAQ
       </p>
       <div className="grid grid-cols-1 mx-10  lg:mx-20  md:grid-cols-2 gap-x-2 gap-y-1 md:gap-x-5 lg:gap-x-12 md:gap-y-1 lg:gap-y-4">
         {faqs.map((faq, index) => (

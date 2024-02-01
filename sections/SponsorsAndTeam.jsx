@@ -39,7 +39,7 @@ const SponsorsAndTeam = () => {
     <InfoContainer>
       <BgScroll>
         <Sponsors/>
-        <TeamCarousel/>
+        
         <Footer/>
       </BgScroll>
     </InfoContainer>

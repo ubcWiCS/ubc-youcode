@@ -6,7 +6,7 @@ const Register = () => {
   return (
     <div className='flex flex-col items-center justify-center w-1/2 md:ml-20 lg:ml-0 md:mt-10 lg:mt-0'>
 
-      <p className='text-[7px] md:text-[15px] lg:text-lg  text-dark-green font-bold  ]'>WiDS@UBC x UBC WiCS</p>
+      <p className='text-[7px] md:text-[15px] lg:text-lg  text-white font-bold  drop-shadow-md'>WiDS@UBC x UBC WiCS</p>
       <div className=" md:ml-5 w-36 h-12 md:w-60 md:h-20 lg:w-96 lg:h-28 relative ">
             <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
               <Image src="/assets/youCode.png" fill
