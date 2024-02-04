@@ -1,6 +1,12 @@
+"use client"
+
 import React from 'react'
 import Image from 'next/image';
 import Link from 'next/link';
+
+import styled from 'styled-components';
+import { SectionContainer } from '@/components/SectionContainer';
+import Navbar from '@/components/Navbar';
 
 const profiles = [
   {
@@ -36,6 +42,15 @@ const profiles = [
     social: "https://www.linkedin.com/in/moira-renata/"
   },
   {
+    img: '/assets/team/Tanya.jpg',
+    name: 'Tanya',
+    emoji: '🫧',
+    color: '#01DACC',
+    title: 'Website Team Lead',
+    social: "https://www.linkedin.com/in/tanya-75a03a254/"
+  },
+  
+  {
     img: '/assets/team/Karan.jpg',
     name: 'Karan Chick',
     emoji: '🦦',
@@ -50,14 +65,6 @@ const profiles = [
     color: '#01DACC',
     title: 'Finance',
     social: "https://www.linkedin.com/in/katiekathiresan/"
-  },
-  {
-    img: '/assets/team/Tanya.jpg',
-    name: 'Tanya',
-    emoji: '🫧',
-    color: '#01DACC',
-    title: 'Website Team Lead',
-    social: "https://www.linkedin.com/in/tanya-75a03a254/"
   },
   
   {
@@ -74,7 +81,7 @@ const profiles = [
     name: 'Carina Tze',
     emoji: '🫶🏻',
     color: '#01DACC',
-    title: 'Workshop + swag committee',
+    title: 'Workshop + swag',
     social: "https://www.linkedin.com/in/carinactze/"
   },
   {
@@ -87,11 +94,11 @@ const profiles = [
   },
   {
     img: '/assets/team/Megan.jpg',
-    name: '🐳',
-    emoji: 'WICS',
+    name: 'Megan',
+    emoji: '🐳',
     color: '#01DACC',
-    title: 'Website Team',
-    social: "https://www.linkedin.com/in/hannahmeaney/"
+    title: 'Website ',
+    social: "https://www.linkedin.com/in/meganong-/"
   },
   {
     img: '/assets/team/Sarah.jpg',
@@ -110,25 +117,25 @@ const profiles = [
     social: "https://www.linkedin.com/in/victoria-farkas-617262262/"
   },
   {
-    img: '/assets/team/Pantea.jpeg',
+    img: '/assets/team/Pantea.jpg',
     name: 'Pantea Ghoroori',
     emoji: '🦋 ',
     color: '#01DACC',
-    title: 'Swag Committee',
+    title: 'Swag ',
     social: "https://www.linkedin.com/in/pantea-ghoroori-4a3a66227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
 
   {
-    img: '/assets/team/ChohyeonKim.png',
+    img: '/assets/team/Chohyeon.jpg',
     name: 'Chohyeon Kim',
     emoji: '👻 ',
     color: '#01DACC',
-    title: 'Website Team',
+    title: 'Website ',
     social: "https://www.linkedin.com/in/chohyeon-k-586614230/"
   },
   
   {
-    img: '/assets/team/Yeojun-Han.jpg',
+    img: '/assets/team/Yeojun.jpg',
     name: 'Yeojun Han',
     emoji: '🧸',
     color: '#01DACC',
@@ -137,7 +144,7 @@ const profiles = [
   },
 
   {
-    img: '/assets/team/Kaitlin.png',
+    img: '/assets/team/Kaitlin.jpg',
     name: 'Kaitlin Khu',
     emoji: '😽',
     color: '#01DACC',
@@ -146,15 +153,15 @@ const profiles = [
   },
 
   {
-    img: '/assets/team/Selin-Uz.jpeg',
+    img: '/assets/team/Selin.jpg',
     name: 'Selin Uz',
     emoji: '🕺',
     color: '#01DACC',
-    title: 'Website Team',
+    title: 'Website',
     social: ""
   },
   {
-    img: '/assets/team/zelalem.png',
+    img: '/assets/team/Zelalem.jpg',
     name: 'Zelalem Araya',
     emoji: '❣️',
     color: '#01DACC',
@@ -170,7 +177,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/shannon-aurelia-s/"
   },
   {
-    img: '/assets/team/angelique.jpeg',
+    img: '/assets/team/angelique.jpg',
     name: 'Angelique Clara Hanzell',
     emoji: '🐇',
     color: '#01DACC',
@@ -186,7 +193,7 @@ const profiles = [
     social: ""
   },
   {
-    img: '/assets/team/prajna.png',
+    img: '/assets/team/prajna.jpg',
     name: 'Prajna Nayak',
     emoji: '🍉',
     color: '#01DACC',
@@ -194,7 +201,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/prajna-nayak-807b1a247/"
   },
   {
-    img: '/assets/team/olivia.jpeg',
+    img: '/assets/team/olivia.jpg',
     name: 'Olivia Lam',
     emoji: '🦖',
     color: '#01DACC',
@@ -202,7 +209,7 @@ const profiles = [
     social: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BywYhXZUiRuSGfAKJulF3aw%3D%3D"
   },
   {
-    img: '/assets/team/fatima.jpeg',
+    img: '/assets/team/fatima.jpg',
     name: 'Fatima Yahya',
     emoji: '👀',
     color: '#01DACC',
@@ -210,7 +217,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/fatima-yahya-27ba43112/"
   },
   {
-    img: '/assets/team/tetiksha.png',
+    img: '/assets/team/tetiksha.jpg',
     name: 'Tetiksha Jain',
     emoji: '🦄',
     color: '#01DACC',
@@ -218,7 +225,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/tetiksha-jain/"
   },
   {
-    img: '/assets/team/iris.jpeg',
+    img: '/assets/team/iris.jpg',
     name: 'Iris Caglayan',
     emoji: '🦄',
     color: '#01DACC',
@@ -247,24 +254,63 @@ const profiles = [
   
 ];
 
+const BgSectionContainer = styled(SectionContainer)`
+  background: #150C27;
+  background-size: 100vw;
+  background-repeat: no-repeat;
+  background-position: center top;
+  
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1920/2160;
+  z-index: 0;
+  overflow: hidden;
+
+  
+  }
+`
+const BgScroll = styled(SectionContainer)`
+  background: url('assets/team.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+
+`
 
 const page = () => {
   return (
-    <div className='flex items-center justify-center mt-20 p-4 md:p-20 '>
-        <div className=""></div>
+    <BgSectionContainer>
+      <Navbar/>
+    <BgScroll/>
+      <div className='flex items-center justify-center mt-20 p-4 md:p-16 '>
+          
+          <div className=""></div>
 
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-10">
-            {profiles.map((profile) => (
-                    <div className=" h-auto max-w-full rounded-lg relative" key={profile.name} style={{ flexShrink: 0 }}>
-                    <Link href={profile.social} >
-                    <img class="h-auto max-w-full rounded-lg" src={profile.img} alt=""/>
-                    </Link>
-                    </div>
-                ))}
+          <div className="grid grid-cols-6 gap-4 md:gap-x-20 md:gap-y-10">
+              {profiles.map((profile) => (
+                      <div className=" h-auto max-w-full flex items-center justify-center items-center rounded-lg relative hover:scale-105 transition duration-500" key={profile.name} style={{ flexShrink: 0 }}>
+                      <Link href={profile.social} >
+                      <img className="h-auto max-w-full rounded-lg" src={profile.img} alt=""/>
+                      <div className='flex text-dark-green flex-col justify-center align-center items-center text-center mt-2'>
+                        <p className='text-centre justify-center'>{profile.name}{" "}{profile.emoji}</p>
+                        <p>{profile.title}</p>
+                      </div>
+                      </Link>
+                      </div>
+                  ))}
 
-        </div>
+          </div>
     </div>
+    </BgSectionContainer>
+    
   )
 }
 

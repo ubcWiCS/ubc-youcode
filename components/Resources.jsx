@@ -17,7 +17,7 @@ const Resources = () => {
     )
   }
   return (
-    <div className='resources ml-8 mt-4 md:mt-0' id="resources">
+    <div className='resources ml-8 mt-4 md:mt-20' id="resources">
       <div className="text-lg  md:text-3xl lg:text-5xl text-white font-bold mb-1 lg:mb-7 drop-shadow-[0_0_4px_#E2D6FF] ">
           youCode 2024 Playlist 
         </div>

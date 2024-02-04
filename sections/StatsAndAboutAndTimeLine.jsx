@@ -22,7 +22,7 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/StatsAndAbout2.png');
+  background: url('assets/Stats.png');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;
@@ -44,8 +44,8 @@ const BodyContainer = styled.div`
   @media (min-width: 768px) {
     margin-top: 1rem;
   position:relative;
-  margin-left: 2rem;
-  margin-right: 2rem;
+  // margin-left: 2rem;
+  // margin-right: 2rem;
   }
   
  

@@ -19,7 +19,7 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/faq.png');
+  background: url('assets/faqw.png');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;
