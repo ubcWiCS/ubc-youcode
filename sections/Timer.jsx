@@ -18,7 +18,7 @@ const InfoContainer = styled.div`
   
 `
 const BgScroll = styled(SectionContainer)`
-  background: url('assets/Timer3.png');
+  background: url('assets/TimeLine.png');
   background-size: 100vw;
   background-repeat: no-repeat;
   background-position: center center;

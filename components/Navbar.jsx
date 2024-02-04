@@ -99,6 +99,9 @@ const Navbar = () => {
               <Link onClick={closeMenu} href="/#contact">Contact</Link>
             </li>
             <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
+              <Link onClick={closeMenu} href="/team">Team</Link>
+            </li>
+            <li className="p-2 md:p-4 mr-4 hover:bg-primary-darkgreen hover:scale-110 transition duration-500">
               <Link onClick={closeMenu} href="https://www.ubcgirlcode.com/">girlCode</Link>
             </li>
           </ul>
