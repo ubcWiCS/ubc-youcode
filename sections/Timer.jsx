@@ -44,8 +44,8 @@ const BodyContainer = styled.div`
 
 const Timer = () => {
   return (
-    <InfoContainer>
-      <BgScroll />
+    //<InfoContainer>
+      //<BgScroll />
       <BodyContainer className='flex flex-col items-center justify-center z-10'>
         
       <TimeLine/>
@@ -55,7 +55,7 @@ const Timer = () => {
       </BodyContainer>
       
       
-    </InfoContainer>
+    //</InfoContainer>
   )
 }
 
