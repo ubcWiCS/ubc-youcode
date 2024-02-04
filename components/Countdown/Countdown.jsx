@@ -43,7 +43,7 @@ const Countdown = () => {
 
   return (
     <div className='countdown'>
-      <img src="/assets/treadmill_unicorn.svg" alt="Treadmill Unicorn" className="running_unicorn" />
+      <img src="/assets/runner.gif" alt="Treadmill Unicorn" className="running_unicorn" />
       
       <div className='header'>
         Registration ends in:

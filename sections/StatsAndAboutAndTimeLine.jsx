@@ -38,8 +38,8 @@ const BodyContainer = styled.div`
   
   margin-top: 0rem;
   position:relative;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  // margin-left: 1rem;
+  // margin-right: 1rem;
 
   @media (min-width: 768px) {
     margin-top: 1rem;
@@ -53,8 +53,8 @@ const BodyContainer = styled.div`
 
 const StatsAndAboutAndTimeLine = () => {
   return (
-    <InfoContainer>
-      <BgScroll />
+    //<InfoContainer>
+      //<BgScroll />
       <BodyContainer className='flex w-full flex-col z-10'>
      
       <About/>
@@ -64,7 +64,7 @@ const StatsAndAboutAndTimeLine = () => {
       </BodyContainer>
       
       
-    </InfoContainer>
+    //</InfoContainer>
   )
 }
 

@@ -262,9 +262,19 @@ const BgSectionContainer = styled(SectionContainer)`
   
   position: relative;
   width: 100%;
-  aspect-ratio: 1920/2160;
+  aspect-ratio: 1920/4320;
   z-index: 0;
   overflow: hidden;
+
+ 
+
+  @media (min-width: 768px) {
+    aspect-ratio: 1920/3240;
+  }
+
+  @media (min-width: 1000px) {
+    aspect-ratio: 1920/2160;
+  }
 
   
   }
@@ -289,17 +299,17 @@ const page = () => {
     <BgSectionContainer>
       <Navbar/>
     <BgScroll/>
-      <div className='flex items-center justify-center mt-20 p-4 md:p-16 '>
+      <div className='flex items-center justify-center mt-10 lg:mt-20 p-4 md:p-12 lg:p-16 '>
           
           <div className=""></div>
 
 
-          <div className="grid grid-cols-6 gap-4 md:gap-x-20 md:gap-y-10">
+          <div className="grid grid-cols-5 lg:grid-cols-6 gap-4 md:gap-x-12 md:gap-y-2 lg:gap-x-16 lg:gap-y-10">
               {profiles.map((profile) => (
                       <div className=" h-auto max-w-full flex items-center justify-center items-center rounded-lg relative hover:scale-105 transition duration-500" key={profile.name} style={{ flexShrink: 0 }}>
                       <Link href={profile.social} >
                       <img className="h-auto max-w-full rounded-lg" src={profile.img} alt=""/>
-                      <div className='flex text-dark-green flex-col justify-center align-center items-center text-center mt-2'>
+                      <div className='flex text-[5px] md:text-[8px] lg:text-sm text-dark-green flex-col justify-center align-center items-center text-center mt-2'>
                         <p className='text-centre justify-center'>{profile.name}{" "}{profile.emoji}</p>
                         <p>{profile.title}</p>
                       </div>

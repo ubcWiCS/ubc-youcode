@@ -37,12 +37,12 @@ const BgScroll = styled(SectionContainer)`
 
 const ResourcesAndFaq = () => {
   return (
-    <InfoContainer>
-      <BgScroll>
+    //<InfoContainer>
+      //<BgScroll>
         <Resources/>
        
-      </BgScroll>
-    </InfoContainer>
+      //</BgScroll>
+    //</InfoContainer>
   )
 }
 

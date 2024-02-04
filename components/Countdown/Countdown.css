@@ -7,7 +7,7 @@
 }
 
 .running_unicorn {
-    width: 35%; 
+    width: 55%; 
     height: auto;
     margin-bottom: -0.3em;
   }
@@ -161,7 +161,7 @@
 /* Responsive adjustments */
 @media (min-width: 1000px) {
     .countdown {
-        max-width: 100%;
+        max-width: 50%;
     padding: 0rem 4rem;
     display: flex;
     flex-direction: column;

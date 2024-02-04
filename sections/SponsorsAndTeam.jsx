@@ -36,13 +36,15 @@ const BgScroll = styled(SectionContainer)`
 
 const SponsorsAndTeam = () => {
   return (
-    <InfoContainer>
-      <BgScroll>
+    //<InfoContainer>
+      //<BgScroll>
+       <div>
         <Sponsors/>
         
         <Footer/>
-      </BgScroll>
-    </InfoContainer>
+        </div>
+      //</BgScroll>
+    //</InfoContainer>
   )
 }
 

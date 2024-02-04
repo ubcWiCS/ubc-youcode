@@ -37,11 +37,11 @@ const BgScroll = styled(SectionContainer)`
 
 const FaqMobile = () => {
   return (
-    <InfoContainer >
-      <BgScroll>
+    //<InfoContainer >
+      //<BgScroll>
         <Faq/>
-      </BgScroll>
-    </InfoContainer>
+      //</BgScroll>
+    //</InfoContainer>
   )
 }
 
