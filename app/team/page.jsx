@@ -41,6 +41,7 @@ const profiles = [
     title: 'Co-Lead',
     social: "https://www.linkedin.com/in/moira-renata/"
   },
+  
   {
     img: '/assets/team/Tanya.jpg',
     name: 'Tanya',
@@ -49,7 +50,70 @@ const profiles = [
     title: 'Website Team Lead',
     social: "https://www.linkedin.com/in/tanya-75a03a254/"
   },
-  
+  {
+    img: '/assets/team/Carina.jpg',
+    name: 'Carina Tze',
+    emoji: '🫶🏻',
+    color: '#01DACC',
+    title: 'Swag Team Lead',
+    social: "https://www.linkedin.com/in/carinactze/"
+  },
+  {
+    img: '/assets/Logo.png',
+    name: 'Shannon Aurelia',
+    emoji: '🩰',
+    color: '#01DACC',
+    title: 'Pre-Hackathon Lead',
+    social: "https://www.linkedin.com/in/shannon-aurelia-s/"
+  },
+  {
+    img: '/assets/team/Megan.jpg',
+    name: 'Megan Ong',
+    emoji: '🐳',
+    color: '#01DACC',
+    title: 'Website ',
+    social: "https://www.linkedin.com/in/meganong-/"
+  },
+  {
+    img: '/assets/team/Chohyeon.jpg',
+    name: 'Chohyeon Kim',
+    emoji: '👻 ',
+    color: '#01DACC',
+    title: 'Website ',
+    social: "https://www.linkedin.com/in/chohyeon-k-586614230/"
+  },
+  {
+    img: '/assets/team/Selin.jpg',
+    name: 'Selin Uz',
+    emoji: '🕺',
+    color: '#01DACC',
+    title: 'Website',
+    social: "https://www.linkedin.com/in/selin-uz/"
+  },
+  {
+    img: '/assets/team/prajna.jpg',
+    name: 'Prajna Nayak',
+    emoji: '🍉',
+    color: '#01DACC',
+    title: 'Website + Swag',
+    social: "https://www.linkedin.com/in/prajna-nayak-807b1a247/"
+  },
+  {
+    img: '/assets/team/olivia.jpg',
+    name: 'Olivia Lam',
+    emoji: '🦖',
+    color: '#01DACC',
+    title: 'Website',
+    social: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BywYhXZUiRuSGfAKJulF3aw%3D%3D"
+  },
+  {
+    img: '/assets/team/Khammy.jpeg',
+    name: 'Khammy Saychaleun',
+    emoji: '🦄',
+    color: '#01DACC',
+    title: 'Marketing + Website',
+    social: "https://www.linkedin.com/in/khammy-saychaleun-26290817b/"
+  },
   {
     img: '/assets/team/Karan.jpg',
     name: 'Karan Chick',
@@ -57,32 +121,6 @@ const profiles = [
     color: '#01DACC',
     title: 'Social Media',
     social: "https://www.linkedin.com/in/karan-chick/"
-  },
-  {
-    img: '/assets/team/Katie.jpg',
-    name: 'Katie Kathiresan',
-    emoji: '✨',
-    color: '#01DACC',
-    title: 'Finance',
-    social: "https://www.linkedin.com/in/katiekathiresan/"
-  },
-  
-  {
-    img: '/assets/Logo.png',
-    name: 'Grace Co',
-    emoji: '🤪',
-    color: '#01DACC',
-    title: 'Outreach',
-    social: "https://www.linkedin.com/in/grace--co/"
-  },
-
-  {
-    img: '/assets/team/Carina.jpg',
-    name: 'Carina Tze',
-    emoji: '🫶🏻',
-    color: '#01DACC',
-    title: 'Workshop + swag',
-    social: "https://www.linkedin.com/in/carinactze/"
   },
   {
     img: '/assets/team/Hannah.jpg',
@@ -93,13 +131,33 @@ const profiles = [
     social: "https://www.linkedin.com/in/hannahmeaney/"
   },
   {
-    img: '/assets/team/Megan.jpg',
-    name: 'Megan',
-    emoji: '🐳',
+    img: '/assets/team/Kaitlin.jpg',
+    name: 'Kaitlin Khu',
+    emoji: '😽',
     color: '#01DACC',
-    title: 'Website ',
-    social: "https://www.linkedin.com/in/meganong-/"
+    title: 'Social Media',
+    social: "https://www.linkedin.com/in/kaitlinkhu/"
   },
+  {
+    img: '/assets/Logo.png',
+    name: 'Alizah Irfan',
+    emoji: '🐤',
+    color: '#01DACC',
+    title: 'Social Media',
+    social: ""
+  },
+  
+  
+  {
+    img: '/assets/Logo.png',
+    name: 'Grace Co',
+    emoji: '🤪',
+    color: '#01DACC',
+    title: 'Outreach',
+    social: "https://www.linkedin.com/in/grace--co/"
+  },
+
+
   {
     img: '/assets/team/Sarah.jpg',
     name: 'Sarah Wong',
@@ -124,42 +182,18 @@ const profiles = [
     title: 'Swag ',
     social: "https://www.linkedin.com/in/pantea-ghoroori-4a3a66227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
   },
-
   {
-    img: '/assets/team/Chohyeon.jpg',
-    name: 'Chohyeon Kim',
-    emoji: '👻 ',
+    img: '/assets/team/Sonja.jpg',
+    name: 'Sonja Deng',
+    emoji: '🦭',
     color: '#01DACC',
-    title: 'Website ',
-    social: "https://www.linkedin.com/in/chohyeon-k-586614230/"
+    title: 'Swag',
+    social: "https://www.linkedin.com/in/sonja-deng-0a5a79289/"
   },
+
   
-  {
-    img: '/assets/team/Yeojun.jpg',
-    name: 'Yeojun Han',
-    emoji: '🧸',
-    color: '#01DACC',
-    title: 'Finance',
-    social: "https://www.linkedin.com/in/yeojun/"
-  },
-
-  {
-    img: '/assets/team/Kaitlin.jpg',
-    name: 'Kaitlin Khu',
-    emoji: '😽',
-    color: '#01DACC',
-    title: 'Social Media',
-    social: "https://www.linkedin.com/in/kaitlinkhu/"
-  },
-
-  {
-    img: '/assets/team/Selin.jpg',
-    name: 'Selin Uz',
-    emoji: '🕺',
-    color: '#01DACC',
-    title: 'Website',
-    social: ""
-  },
+  
+  
   {
     img: '/assets/team/Zelalem.jpg',
     name: 'Zelalem Araya',
@@ -168,14 +202,7 @@ const profiles = [
     title: 'Workshop',
     social: "https://www.linkedin.com/in/zelalem-araya/"
   },
-  {
-    img: '/assets/Logo.png',
-    name: 'Shannon Aurelia',
-    emoji: '🩰',
-    color: '#01DACC',
-    title: 'Workshop',
-    social: "https://www.linkedin.com/in/shannon-aurelia-s/"
-  },
+  
   {
     img: '/assets/team/angelique.jpg',
     name: 'Angelique Clara Hanzell',
@@ -184,30 +211,8 @@ const profiles = [
     title: 'Swag',
     social: "https://www.linkedin.com/in/angeliqueclara/"
   },
-  {
-    img: '/assets/Logo.png',
-    name: 'Alizah Irfan',
-    emoji: '🐤',
-    color: '#01DACC',
-    title: 'Marketing',
-    social: ""
-  },
-  {
-    img: '/assets/team/prajna.jpg',
-    name: 'Prajna Nayak',
-    emoji: '🍉',
-    color: '#01DACC',
-    title: 'Website + Swag',
-    social: "https://www.linkedin.com/in/prajna-nayak-807b1a247/"
-  },
-  {
-    img: '/assets/team/olivia.jpg',
-    name: 'Olivia Lam',
-    emoji: '🦖',
-    color: '#01DACC',
-    title: 'Website',
-    social: "https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BywYhXZUiRuSGfAKJulF3aw%3D%3D"
-  },
+  
+  
   {
     img: '/assets/team/fatima.jpg',
     name: 'Fatima Yahya',
@@ -233,21 +238,23 @@ const profiles = [
     social: "https://www.linkedin.com/in/iriscaglayan/"
   },
   {
-    img: '/assets/Logo.png',
-    name: 'Khammy Saychaleun',
-    emoji: '🦄',
+    img: '/assets/team/Yeojun.jpg',
+    name: 'Yeojun Han',
+    emoji: '🧸',
     color: '#01DACC',
-    title: 'Marketing + Website',
-    social: "https://www.linkedin.com/in/khammy-saychaleun-26290817b/"
+    title: 'Finance',
+    social: "https://www.linkedin.com/in/yeojun/"
   },
   {
-    img: '/assets/Logo.png',
-    name: 'Sonja Deng',
-    emoji: '🦭',
+    img: '/assets/team/Katie.jpg',
+    name: 'Katie Kathiresan',
+    emoji: '✨',
     color: '#01DACC',
-    title: 'Swag',
-    social: "https://www.linkedin.com/in/sonja-deng-0a5a79289/"
+    title: 'Finance',
+    social: "https://www.linkedin.com/in/katiekathiresan/"
   },
+  
+
 
 
   

@@ -56,7 +56,7 @@ const BodyContainer = styled.div`
   }
 
   @media (min-width: 1000px) {
-    margin-top: 13rem;
+    margin-top: 7rem;
   }
   
  
