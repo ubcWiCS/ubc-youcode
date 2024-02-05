@@ -49,7 +49,7 @@ const FaqSection = () => {
     const secondHalfFaqs = faqs.slice(half);
 
     return (
-      <div className="bg-teal-200 p-3 md:p-6 lg:p-14 rounded-3xl lg:bg-white/[0.1] my-10 mx-auto max-w-6xl" id="faq">
+      <div className="bg-teal-200 p-3 md:p-6 lg:p-14 md:mt-20 lg:mt-40 rounded-3xl lg:bg-white/[0.1] my-10 mx-auto max-w-6xl" id="faq">
         <p className='text-center text-xs md:text-3xl lg:text-5xl font-bold text-white mb-[8px] md:mb-7 lg:mb-20'> 
           FAQ
         </p>
