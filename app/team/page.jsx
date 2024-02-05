@@ -91,7 +91,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/selin-uz/"
   },
   {
-    img: '/assets/team/prajna.jpg',
+    img: '/assets/team/Prajna.jpg',
     name: 'Prajna Nayak',
     emoji: '🍉',
     color: '#01DACC',
@@ -99,7 +99,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/prajna-nayak-807b1a247/"
   },
   {
-    img: '/assets/team/olivia.jpg',
+    img: '/assets/team/Olivia.jpg',
     name: 'Olivia Lam',
     emoji: '🦖',
     color: '#01DACC',
@@ -204,7 +204,7 @@ const profiles = [
   },
   
   {
-    img: '/assets/team/angelique.jpg',
+    img: '/assets/team/Angelique.jpg',
     name: 'Angelique Clara Hanzell',
     emoji: '🐇',
     color: '#01DACC',
@@ -214,7 +214,7 @@ const profiles = [
   
   
   {
-    img: '/assets/team/fatima.jpg',
+    img: '/assets/team/Fatima.jpg',
     name: 'Fatima Yahya',
     emoji: '👀',
     color: '#01DACC',
@@ -222,7 +222,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/fatima-yahya-27ba43112/"
   },
   {
-    img: '/assets/team/tetiksha.jpg',
+    img: '/assets/team/Tetiksha.jpg',
     name: 'Tetiksha Jain',
     emoji: '🦄',
     color: '#01DACC',
@@ -230,7 +230,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/tetiksha-jain/"
   },
   {
-    img: '/assets/team/iris.jpg',
+    img: '/assets/team/Iris.jpg',
     name: 'Iris Caglayan',
     emoji: '🦄',
     color: '#01DACC',
