@@ -1,3 +1,4 @@
+
 import Resources from '@/components/Resources';
 import React from 'react'
 import { useParallax } from 'react-scroll-parallax';
@@ -14,9 +15,6 @@ const InfoContainer = styled.div`
   z-index: 10;
   overflow: hidden;
 
-
-  
-  
 `
 const BgScroll = styled(SectionContainer)`
   background: url('assets/Resources.png');
