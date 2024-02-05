@@ -72,8 +72,8 @@ const Navbar = () => {
 
                 <div
           className={`${
-            isOpen ? "flex flex-col items-end justify-end z-1000  bg-white text-black " : "hidden"
-          } sm:flex flex-col sm:flex-row sm:w-full font-medium justify-end  text-dark-green md:text-white gap-1 md:gap-4 mt-4`}
+            isOpen ? "flex flex-col items-end justify-end z-1000 absolute mt-8  bg-white text-black " : "hidden"
+          } sm:flex flex-col sm:flex-row sm:w-full font-bold justify-end  text-dark-green md:text-white gap-1 md:gap-4 mt-4`}
         >
 
         

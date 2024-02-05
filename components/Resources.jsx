@@ -8,8 +8,8 @@ const Resources = () => {
       <div className="relative flex flex-row">
         <div className=" text-[9px] md:text-sm lg:text-lg w-1/12 font-semibolf">{ props.number }</div>
         <div className="text-[9px]  md:text-sm lg:text-lg w-4/12 font-semibold">{ props.title }</div>
-        <div className="text-[9px]  md:text-sm lg:text-lg w-5/12 font-semibold">{ props.topic }</div>
-        <div className="text-[9px]  md:text-sm lg:text-lg w-2/12 font-semibold">
+        <div className="text-[9px]  md:text-sm lg:text-lg w-4/12 font-semibold">{ props.topic }</div>
+        <div className="text-[9px]  hover:scale-105 transition duration-500 md:text-sm lg:text-lg w-2/12 font-semibold">
         <a className="text-[9px]  md:text-sm lg:text-lg w-2/12  px-2 md:px-6 py-[1px] md:py-2 text-center bg-red-500 rounded-3xl underline underline-offset-2" href={ props.link }>Link</a>
         </div>
         
@@ -47,7 +47,7 @@ const Resources = () => {
     <div className="relative flex flex-row">
       <div className='text-[9px] md:text-lg text-black w-1/12'>#</div>
       <div className='text-[9px] font-semibold  md:text-lg text-black w-4/12'>Title</div>
-      <div className='text-[9px] font-semibold  md:text-lg text-black w-5/12'>Topic</div>
+      <div className='text-[9px] font-semibold  md:text-lg text-black w-4/12'>Topic</div>
       <div className='text-[9px] font-semibold  md:text-lg text-black w-2/12'>Link</div>
     </div>
     <hr className=" md:my-3 border-black w-11/12" />
