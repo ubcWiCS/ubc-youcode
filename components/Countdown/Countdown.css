@@ -19,6 +19,8 @@
     
     font-size: 0.1em;
     color: #FFFFFF;
+
+   font-weight: 500;
     
 
     width: 55%;
@@ -101,6 +103,7 @@
         text-align: center;
         font-size: 0.4em;
         letter-spacing: 0.1em;
+        font-weight: 500;
     }
 
     .countdown .content {
@@ -137,6 +140,7 @@
         text-align: center;
         font-size: 0.4em;
         letter-spacing: 0.1em;
+        font-weight: 500;
     }
 
     .countdown .content {

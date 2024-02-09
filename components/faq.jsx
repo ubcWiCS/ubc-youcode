@@ -27,7 +27,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
         <span>{isOpen ? <MdExpandLess /> : <MdExpandMore />}</span> 
       </button>
       {isOpen && (
-        <div className="mt-1 lg:mt-2 p-2 md:p-4 text-[7px] md:text-xs lg:text-lg  rounded-lg text-white">
+        <div className="mt-1 lg:mt-2 p-2 md:p-4 text-[7px] md:text-xs lg:text-lg font-medium rounded-lg text-white">
           {answer}
         </div>
       )}

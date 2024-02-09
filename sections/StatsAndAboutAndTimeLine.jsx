@@ -14,7 +14,7 @@ const InfoContainer = styled.div`
   width: 100%;
   aspect-ratio: 1920/1080;
 
-  z-index: 10;
+  //z-index: 10;
   overflow: hidden;
 
 
@@ -55,7 +55,7 @@ const StatsAndAboutAndTimeLine = () => {
   return (
     //<InfoContainer>
       //<BgScroll />
-      <BodyContainer className='flex w-full flex-col z-10'>
+      <BodyContainer className='flex w-full flex-col'>
      
       <About/>
       <Stats2/>
