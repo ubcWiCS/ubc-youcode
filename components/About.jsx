@@ -1,6 +1,7 @@
 import React from 'react'
 import Stats from './Stats'
 
+
 const About = () => {
   return (
     <div className='flex mt-20 md:mt-40 ml-8 md:ml-10' id="about">
@@ -11,10 +12,10 @@ const About = () => {
         <Stats/>
       </div>
       <div className='w-1/2'>
-        <p className='hidden drop-shadow-md tracking-wider md:block font-semibold text-dark-green text-xs md:text-xs lg:text-lg mr-20 mt-10'>
+        <p className='hidden drop-shadow-md tracking-wider md:block font-semibold text-dark-green text-xs md:text-xs lg:text-xl mr-20 mt-10'>
         Dedicated to fostering gender inclusivity and breaking traditional norms in the tech industry. As we strive to build opportunities for underrepresented genders interested in tech to innovate, we create tight, welcoming communities where we empower each other. Continuing to build meaningful networks in a supportive environment is our ultimate mission.
         </p>
-        <p className='hidden md:block drop-shadow-md tracking-wider font-semibold text-dark-green text-xs  md:text-xs lg:text-lg mr-20 mt-10 font-bold'>
+        <p className='hidden md:block drop-shadow-md tracking-wider font-semibold text-dark-green text-xs  md:text-xs lg:text-xl mr-20 mt-10 font-bold'>
         Our values: Inclusivity, Visibility, Community, Wellbeing.
         </p>
         

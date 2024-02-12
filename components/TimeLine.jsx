@@ -16,9 +16,9 @@ const TimeLine = () => {
   <div className="flex flex-col items-center justify-center  mt-20 md:mt-40 lg:mt-80 gap-2 md:gap-10"> 
   {/* <p className='text-sm md:text-xl lg:text-3xl text-dark-green font-bold'>Timeline</p> */}
     <div className="flex flex-col items-center text-center  gap-1 lg:gap-10">
-      <p className='text-[10px] md:text-lg lg:text-xl text-dark-green font-bold'>March 1st: Registration opens</p>
-      <p className='text-[10px] md:text-lg lg:text-xl  text-dark-green font-bold'>Pre-Hackathon Workshops TBA</p>
-      <p className='text-[10px] md:text-lg lg:text-xl  text-dark-green font-bold'>April 5th: Hacking Begins!</p>
+      <p className='text-[10px] md:text-lg lg:text-2xl text-dark-green font-bold'>March 1st: Registration opens</p>
+      <p className='text-[10px] md:text-lg lg:text-2xl  text-dark-green font-bold'>Pre-Hackathon Workshops TBA</p>
+      <p className='text-[10px] md:text-lg lg:text-2xl  text-dark-green font-bold'>April 5th: Hacking Begins!</p>
     </div>
     
   </div>
