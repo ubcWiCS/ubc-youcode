@@ -47,7 +47,7 @@ const profiles = [
     name: 'Tanya',
     emoji: '🫧',
     color: '#01DACC',
-    title: 'Website Team Lead',
+    title: 'Website Team Lead + Workshop',
     social: "https://www.linkedin.com/in/tanya-75a03a254/"
   },
   {
@@ -55,11 +55,11 @@ const profiles = [
     name: 'Carina Tze',
     emoji: '🫶🏻',
     color: '#01DACC',
-    title: 'Swag Team Lead',
+    title: 'Swag Team Lead + Workshop',
     social: "https://www.linkedin.com/in/carinactze/"
   },
   {
-    img: '/assets/Logo.png',
+    img: '/assets/team/Shannon.jpg',
     name: 'Shannon Aurelia',
     emoji: '🩰',
     color: '#01DACC',
@@ -131,6 +131,14 @@ const profiles = [
     social: "https://www.linkedin.com/in/hannahmeaney/"
   },
   {
+    img: '/assets/team/Kelly.jpg',
+    name: 'Kelly Zhu',
+    emoji: '🤗',
+    color: '#01DACC',
+    title: 'Workshop',
+    social: "https://www.linkedin.com/in/kelly-zhu-1a1315209/ "
+  },
+  {
     img: '/assets/team/Kaitlin.jpg',
     name: 'Kaitlin Khu',
     emoji: '😽',
@@ -139,7 +147,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/kaitlinkhu/"
   },
   {
-    img: '/assets/Logo.png',
+    img: '/assets/team/Alizah.jpg',
     name: 'Alizah Irfan',
     emoji: '🐤',
     color: '#01DACC',
@@ -149,13 +157,21 @@ const profiles = [
   
   
   {
-    img: '/assets/Logo.png',
+    img: '/assets/team/Grace.jpeg',
     name: 'Grace Co',
     emoji: '🤪',
     color: '#01DACC',
     title: 'Outreach',
     social: "https://www.linkedin.com/in/grace--co/"
   },
+  // {
+  //   img: '/assets/team/Jasvir.jpeg',
+  //   name: 'Jasvir Sandhu',
+  //   emoji: '🐿️',
+  //   color: '#01DACC',
+  //   title: 'Outreach',
+  //   social: "https://www.linkedin.com/in/jasvir-sandhu/"
+  // },
 
 
   {
@@ -189,6 +205,14 @@ const profiles = [
     color: '#01DACC',
     title: 'Swag',
     social: "https://www.linkedin.com/in/sonja-deng-0a5a79289/"
+  },
+  {
+    img: '/assets/team/Stellar.jpg',
+    name: 'Stellar Shar',
+    emoji: '🪿',
+    color: '#01DACC',
+    title: 'Swag',
+    social: "https://www.linkedin.com/in/stellar-shar-4005b219a/"
   },
 
   
@@ -230,6 +254,14 @@ const profiles = [
     social: "https://www.linkedin.com/in/tetiksha-jain/"
   },
   {
+    img: '/assets/team/Pragya.jpg',
+    name: 'Pragya Singhal',
+    emoji: '🌼',
+    color: '#01DACC',
+    title: 'Outreach',
+    social: "https://www.linkedin.com/in/pragya-singhal-39055a237/"
+  },
+  {
     img: '/assets/team/Iris.jpg',
     name: 'Iris Caglayan',
     emoji: '🦄',
@@ -252,6 +284,14 @@ const profiles = [
     color: '#01DACC',
     title: 'Finance',
     social: "https://www.linkedin.com/in/katiekathiresan/"
+  },
+  {
+    img: '/assets/team/maryum.jpg',
+    name: 'Maryum Chaudhry',
+    emoji: '💫',
+    color: '#01DACC',
+    title: 'Sustainability',
+    social: "https://www.linkedin.com/in/maryum-chaudhry-artist/ "
   },
   
 
@@ -280,7 +320,7 @@ const BgSectionContainer = styled(SectionContainer)`
   }
 
   @media (min-width: 1000px) {
-    aspect-ratio: 1920/2160;
+    aspect-ratio: 1920/2560;
   }
 
   
