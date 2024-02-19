@@ -34,7 +34,7 @@ const Navbar = () => {
 
       <div className="ml-2 md:ml-5 w-10 h-10 md:w-16 md:h-16 relative mt-2">
             <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
-              <Image src="/assets/Logo.png" fill
+              <Image src="/assets/youCodeIcon.png" fill
                     alt="YouCode Logo"   />
             </Link>
         </div>
