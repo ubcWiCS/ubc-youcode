@@ -43,7 +43,7 @@ const Navbar = () => {
         <div className="flex flex-col gap-0">
 
 
-            <div className="sm:hidden  "> {/* Center the hamburger menu */}
+            <div className="sm:hidden  "> 
                       <button
                         className="p-2 focus:outline-none"
                         onClick={toggleMenu}
