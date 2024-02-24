@@ -32,9 +32,9 @@ const Stats2 = () => {
           </div>
         </div>
        
-        <p className='md:hidden ml-0 text-white text-[10px] md:text-lg  mt-4'>
+        {/* <p className='md:hidden ml-0 text-white text-[10px] md:text-lg  mt-4'>
         Our values: Inclusivity, Visibility, Community, Wellbeing.
-        </p>
+        </p> */}
       </div>
     </div>
   )
