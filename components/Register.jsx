@@ -7,7 +7,7 @@ const Register = () => {
     <div className='flex flex-col items-center justify-center w-1/2  lg:ml-0 md:mt-10 lg:mt-20'>
 
       
-      <div className=" md:ml-5 w-36 h-16 md:w-10/12 md:h-40 lg:w-9/12 lg:my-8 lg:h-44 relative ">
+      <div className=" md:ml-5 w-36 h-12 md:w-10/12 md:h-40 lg:w-9/12 lg:my-8 lg:h-44 relative ">
             <Link href="/" className="ml-5 hover:scale-105 transition duration-500">
               <Image src="/assets/ac_logo.png" fill
                     alt="YouCode Logo"   />
