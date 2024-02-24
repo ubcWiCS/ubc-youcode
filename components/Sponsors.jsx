@@ -15,8 +15,8 @@ const Sponsors = () => {
       <div className="flex w-20 h-10  md:w-48 md:h-32 lg:w-5/12 lg:h-60  relative">
         <Image src="/assets/arcteryx.png" fill  />
       </div>
-      <div className="flex w-full mt-4 md:mt-10 lg:mt-28 gap-4 md:gap-10 lg:gap-10">
-        <div className="flex w-3/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
+      <div className="flex w-full mt-4 md:mt-10 lg:mt-28 gap-4 md:gap-10 lg:gap-20">
+        <div className="flex w-4/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
           <Image src="/assets/schneider.png" fill  />
         </div>
         <div className="flex w-3/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
@@ -24,7 +24,7 @@ const Sponsors = () => {
         </div>
       </div>
       <div className="flex w-full mt-4 md:mt-10 lg:mt-28">
-        <div className="flex w-2/12 h-4 md:h-10 lg:w-2/12 lg:h-20 relative">
+        <div className="flex w-1/12 h-4 md:h-10 lg:w-2/12 lg:h-20 relative">
           <Image src="/assets/orbis.png" fill  />
         </div>
       </div>

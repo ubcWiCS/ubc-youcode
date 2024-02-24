@@ -18,7 +18,7 @@ const FaqItem = ({ question, answer, isOpen, onClick }) => {
   // const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="mb-[6px] md:mb-4 flex flex-col">
+    <div className="mb-[6px] md:mb-4 flex flex-col ">
       <button
         onClick={onClick}
         className="text-[7px] md:text-xs lg:text-lg flex justify-between items-center w-full px-4 py-[2px] md:px-6  md:py-[5px] lg:py-3 text-left text-white md:font-semibold bg-teal/[0.7] rounded-2xl hover:bg-teal focus:outline-none focus:ring-2 focus:ring-teal"
@@ -49,7 +49,7 @@ const FaqSection = () => {
     const secondHalfFaqs = faqs.slice(half);
 
     return (
-      <div className="bg-teal-200 p-3 md:p-6 lg:p-14 md:mt-20 lg:mt-40 rounded-3xl lg:bg-white/[0.1] my-10 mx-auto max-w-6xl" id="faq">
+      <div className="bg-teal-200 p-3 md:p-6 lg:p-14 md:mt-20 lg:mt-40 rounded-3xl lg:bg-white/[0.1] my-10 mx-auto max-w-6xl xl:mt-60" id="faq">
         <p className='text-center text-xs md:text-3xl lg:text-5xl font-bold text-white mb-[8px] md:mb-7 lg:mb-20'> 
           FAQ
         </p>

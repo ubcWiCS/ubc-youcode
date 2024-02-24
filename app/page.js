@@ -24,13 +24,46 @@ const BgSectionContainer = styled(SectionContainer)`
   overflow: hidden;
 
  
+  @media (min-width: 268px) {
+    aspect-ratio: 1920/7780;
+  }
+
+  @media (min-width: 390px) {
+    aspect-ratio: 1920/6980;
+  }
 
   @media (min-width: 768px) {
+    aspect-ratio: 1920/6780;
+  }
+
+  @media (min-width: 868px) {
     aspect-ratio: 1920/6480;
   }
 
   @media (min-width: 1000px) {
-    aspect-ratio: 1920/6480;
+    aspect-ratio: 1920/6880;
+  }
+
+  @media (min-width: 1800px) {
+    //aspect-ratio: 1920/6480;
+    width: 1980px;
+    height:6480px;
+    margin:auto;
+
+    justify:center;
+    align:center;
+
+  }
+
+  @media (min-width: 2800px) {
+    //aspect-ratio: 1920/6480;
+    width: 1580px;
+    height:5480px;
+    margin:auto;
+
+    justify:center;
+    align:center;
+
   }
 
   

@@ -63,6 +63,8 @@ const FooterSocialContainer = styled.div`
   @media (max-width: 767px) {
     /* Styles for screens smaller than 768px (e.g., mobile devices) */
     gap: 1rem;
+    margin-right: 1rem;
+  margin-left: 1rem;
   }
 
   @media (min-width: 768px) and (max-width: 1023px) {
