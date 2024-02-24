@@ -32,7 +32,7 @@ module.exports = {
         'lg': '1080px',
         // => @media (min-width: 992px) { ... }
       
-        'xl': '1200px',
+        'xl': '1800px',
         // => @media (min-width: 1200px) { ... }
       },
     },

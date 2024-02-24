@@ -28,8 +28,8 @@ const Navbar = () => {
 
   return (
 
-    <div>
-      <div className={`fixed flex top-0 w-full justify-between z-10 ease-in bg-transparent hover:bg-dark-green`}>
+    <div className="">
+      <div className={`fixed flex top-0 w-full xl:w-auto justify-between z-10 ease-in bg-transparent hover:bg-dark-green`}>
 
 
       <div className="ml-2 md:ml-5 w-10 h-10 md:w-16 md:h-16 relative mt-2">
