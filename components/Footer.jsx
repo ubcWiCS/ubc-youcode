@@ -23,10 +23,10 @@ const Footer = () => {
     <StyledFooter>
       <FooterSocial
       direction="row"
-      facebookLink="https://www.facebook.com/yourpage"
-      emailLink="https://www.email.com/yourpage"
-      instagramLink="https://www.instagram.com/yourpage"
-      linkedinLink="https://www.linkedin.com/yourpage"
+      facebookLink="https://www.facebook.com/ubcwics"
+      emailLink="mailto:ubcwics@gmail.com"
+      instagramLink="https://www.instagram.com/ubcwics"
+      linkedinLink="https://www.linkedin.com/company/ubcwics/"
       Logolink="https://ubcwics.com/"
       LogoImage="/assets/WicsLogo.png"
       />
@@ -35,11 +35,11 @@ const Footer = () => {
       </div> */}
       <FooterSocial
       direction="row-reverse"
-      facebookLink="https://www.facebook.com/yourpage"
-      emailLink="https://www.email.com/yourpage"
-      instagramLink="https://www.instagram.com/yourpage"
-      linkedinLink="https://www.linkedin.com/yourpage"
-      Logolink="https://ubcwics.com/"
+      facebookLink="https://www.facebook.com/widsubc/"
+      emailLink="mailto:widsubc@gmail.com"
+      instagramLink="https://www.instagram.com/widsubc"
+      linkedinLink="https://www.linkedin.com/company/widsubc/"
+      Logolink="https://ubcyoucode.com/#contact"
       LogoImage="/assets/WidsLogo.png"
       />
     </StyledFooter>
