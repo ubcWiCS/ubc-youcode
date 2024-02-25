@@ -18,7 +18,7 @@ const TimeLine = () => {
     <div className="flex flex-col items-center text-center  gap-1 lg:gap-10">
       <p className='text-[10px] md:text-lg lg:text-2xl text-dark-green font-bold'>March 1st: Registration opens</p>
       <p className='text-[10px] md:text-lg lg:text-2xl  text-dark-green font-bold'>Pre-Hackathon Workshops TBA</p>
-      <p className='text-[10px] md:text-lg lg:text-2xl  text-dark-green font-bold'>April 5th: Hacking Begins!</p>
+      <p className='text-[10px] md:text-lg lg:text-2xl  text-dark-green font-bold'>April 6th: Hacking Begins!</p>
     </div>
     
   </div>
