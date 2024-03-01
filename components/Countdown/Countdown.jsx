@@ -46,7 +46,7 @@ const Countdown = () => {
       <img src="/assets/runner.gif" alt="Treadmill Unicorn" className="running_unicorn" />
       
       <div className='header'>
-        Registration ends in:
+        Hackthon Starts In:
       </div>
       <div className='content'>
         {Object.entries(timeLeft).map((el) => {
