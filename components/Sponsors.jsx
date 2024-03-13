@@ -17,6 +17,10 @@ const Sponsors = () => {
       </div>
       <div className="flex w-full mt-4 md:mt-10 lg:mt-28 gap-4 md:gap-10 lg:gap-20">
         <div className="flex w-4/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
+          <Image src="/assets/DarkVision.png" fill  />
+        </div>
+
+        <div className="flex w-4/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
           <Image src="/assets/schneider.png" fill  />
         </div>
         <div className="flex w-3/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
