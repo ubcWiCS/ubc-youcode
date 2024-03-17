@@ -15,7 +15,7 @@ const Sponsors = () => {
       <div className="flex w-20 h-10 md:w-48 md:h-32 lg:w-6/12 lg:h-64 relative">
         <Image src="/assets/arcteryx.png" layout="fill" objectFit="contain" alt="Arcteryx" />
       </div>
-      <div className="flex w-20 h-12 md:w-48 md:h-36 lg:w-5/12 lg:h-60 relative">
+      <div className="flex w-20 h-12 md:w-48 md:h-36 lg:w-5/12 lg:h-60 items-center justify-center relative">
        
             <Image src="/assets/DarkVision.png" layout="fill" objectFit="contain" alt="DarkVision" />
          
@@ -27,6 +27,9 @@ const Sponsors = () => {
         </div>
         <div className="flex w-3/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
           <Image src="/assets/plainview.png" layout="fill" objectFit="contain" alt="Plainview" />
+        </div>
+        <div className="flex w-3/12 h-8 md:h-16 lg:w-4/12 lg:h-24 relative">
+          <Image src="/assets/saplogo.png" layout="fill" objectFit="contain" alt="Plainview" />
         </div>
       </div>
       <div className="flex w-full mt-4 md:mt-10 lg:mt-28">
