@@ -61,7 +61,7 @@ const Footer = () => {
       emailLink="mailto:widsubc@gmail.com"
       instagramLink="https://www.instagram.com/widsubc"
       linkedinLink="https://www.linkedin.com/company/widsubc/"
-      Logolink="https://ubcyoucode.com/#contact"
+      Logolink="https://www.ubcwids.com/"
       LogoImage="/assets/WidsLogo.png"
       />
     </StyledFooter>
