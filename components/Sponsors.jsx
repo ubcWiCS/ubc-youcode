@@ -31,6 +31,9 @@ const Sponsors = () => {
           <div className="flex w-2/12 h-8 md:h-12 lg:w-4/12 lg:h-20 items-center justify-center relative">
             <Image src="/assets/plainview.png" layout="fill" objectFit="contain" alt="Plainview" />
           </div>
+          <div className="flex w-2/12 h-8 md:h-12 lg:w-4/12 lg:h-20 items-center justify-center relative">
+            <Image src="/assets/Beedie-Luminaries.png" layout="fill" objectFit="contain" alt="Beedie" />
+          </div>
         </div>      
         <div className="flex w-full md:mt-10 lg:mt-20 items-center justify-center">
           <div className="flex w-1/12 h-4 md:h-10 lg:w-2/12 lg:h-14 relative">
