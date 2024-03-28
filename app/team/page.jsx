@@ -286,7 +286,7 @@ const profiles = [
     social: "https://www.linkedin.com/in/katiekathiresan/"
   },
   {
-    img: '/assets/team/maryum.jpg',
+    img: '/assets/team/Maryum.jpg',
     name: 'Maryum Chaudhry',
     emoji: '💫',
     color: '#01DACC',
